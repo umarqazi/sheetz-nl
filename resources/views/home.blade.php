@@ -1,0 +1,472 @@
+@extends('layouts.app') @section('content')
+<div class="main_wrapper">
+    <div class="main_banner">
+        <div class="hotel_description text-center">
+            <h1>Savor</h1>
+            <h2>summer nights</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <div class="hotel_filter">
+                <ul>
+                    <div class="filter_inner clearfix">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/icon1.png"> <span>Choose Hotel</span> </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#"><img src="images/flag.png"> <span>aaa</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/flag.png"> <span>aaa</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <img src="images/icon2.png">
+                            <input type="text" class="form-control datepicker" placeholder="Check In">
+                        </li>
+                        <li class="dropdown">
+                            <img src="images/icon3.png">
+                            <input type="text" class="form-control datepicker" placeholder="Check Out">
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/icon4.png"> <span>Room type</span> </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#"><img src="images/flag.png"> <span>aaa</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/flag.png"> <span>aaa</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                    <a href="#" class="filter_search"><img src="images/megnify.png"></a>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="main_content">
+        <h1 class="main_hd text-center text-uppercase"><span>our hotels</span></h1>
+    </div>
+    <div class="main_slider">
+        <div class="responsive">
+            <div class="slider_wrapper">
+                <div class="slider_inner">
+                    <div class="slider_img">
+                        <a href="#">
+<img src="images/MainPage_03.jpg">
+<img class="mapicon" src="images/map_icon.png">                        
+                        </a>
+                    </div>
+                    <div class="slider_txt">
+                        <h3>Grand Hotel Ter Duin</h3>
+                        <span>Hogeweg 55, Burgh-Haamstede, Netherlands</span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>Planning to go for a weekend or (mid) week away to a hotel in New Zealand? Ultimate relaxation at Grand Hotel Ter Duin for a walk along and unwind is an ideal accommodation. </p>
+                        <p class="from">from <span>$57</span></p>
+                        <div class="book_now">
+                            <a href="#">book now!</a>
+                            <a href="#" class="view_details"><img src="images/icon5.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_wrapper">
+                <div class="slider_inner">
+                    <div class="slider_img">
+                        <a href="#">
+<img src="images/MainPage_05.jpg">
+<img class="mapicon" src="images/map_icon.png">                        
+                        </a>
+                    </div>
+                    <div class="slider_txt">
+                        <h3>Grand Hotel Ter Duin</h3>
+                        <span>Hogeweg 55, Burgh-Haamstede, Netherlands</span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>Planning to go for a weekend or (mid) week away to a hotel in New Zealand? Ultimate relaxation at Grand Hotel Ter Duin for a walk along and unwind is an ideal accommodation. </p>
+                        <p class="from">from <span>$57</span></p>
+                        <div class="book_now">
+                            <a href="#">book now!</a>
+                            <a href="#" class="view_details"><img src="images/icon5.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_wrapper">
+                <div class="slider_inner">
+                    <div class="slider_img">
+                        <a href="#">
+<img src="images/MainPage_07.jpg">
+<img class="mapicon" src="images/map_icon.png">                        
+                        </a>
+                    </div>
+                    <div class="slider_txt">
+                        <h3>Grand Hotel Ter Duin</h3>
+                        <span>Hogeweg 55, Burgh-Haamstede, Netherlands</span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>Planning to go for a weekend or (mid) week away to a hotel in New Zealand? Ultimate relaxation at Grand Hotel Ter Duin for a walk along and unwind is an ideal accommodation. </p>
+                        <p class="from">from <span>$57</span></p>
+                        <div class="book_now">
+                            <a href="#">book now!</a>
+                            <a href="#" class="view_details"><img src="images/icon5.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_wrapper">
+                <div class="slider_inner">
+                    <div class="slider_img">
+                        <a href="#">
+<img src="images/MainPage_09.jpg">
+<img class="mapicon" src="images/map_icon.png">                        
+                        </a>
+                    </div>
+                    <div class="slider_txt">
+                        <h3>Grand Hotel Ter Duin</h3>
+                        <span>Hogeweg 55, Burgh-Haamstede, Netherlands</span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>Planning to go for a weekend or (mid) week away to a hotel in New Zealand? Ultimate relaxation at Grand Hotel Ter Duin for a walk along and unwind is an ideal accommodation. </p>
+                        <p class="from">from <span>$57</span></p>
+                        <div class="book_now">
+                            <a href="#">book now!</a>
+                            <a href="#" class="view_details"><img src="images/icon5.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_wrapper">
+                <div class="slider_inner">
+                    <div class="slider_img">
+                        <a href="#">
+<img src="images/MainPage_03.jpg">
+<img class="mapicon" src="images/map_icon.png">                        
+                        </a>
+                    </div>
+                    <div class="slider_txt">
+                        <h3>Grand Hotel Ter Duin</h3>
+                        <span>Hogeweg 55, Burgh-Haamstede, Netherlands</span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>Planning to go for a weekend or (mid) week away to a hotel in New Zealand? Ultimate relaxation at Grand Hotel Ter Duin for a walk along and unwind is an ideal accommodation. </p>
+                        <p class="from">from <span>$57</span></p>
+                        <div class="book_now">
+                            <a href="#">book now!</a>
+                            <a href="#" class="view_details"><img src="images/icon5.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_wrapper">
+                <div class="slider_inner">
+                    <div class="slider_img">
+                        <a href="#">
+<img src="images/MainPage_05.jpg">
+<img class="mapicon" src="images/map_icon.png">                        
+                        </a>
+                    </div>
+                    <div class="slider_txt">
+                        <h3>Grand Hotel Ter Duin</h3>
+                        <span>Hogeweg 55, Burgh-Haamstede, Netherlands</span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>Planning to go for a weekend or (mid) week away to a hotel in New Zealand? Ultimate relaxation at Grand Hotel Ter Duin for a walk along and unwind is an ideal accommodation. </p>
+                        <p class="from">from <span>$57</span></p>
+                        <div class="book_now">
+                            <a href="#">book now!</a>
+                            <a href="#" class="view_details"><img src="images/icon5.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_wrapper">
+                <div class="slider_inner">
+                    <div class="slider_img">
+                        <a href="#">
+<img src="images/MainPage_07.jpg">
+<img class="mapicon" src="images/map_icon.png">                        
+                        </a>
+                    </div>
+                    <div class="slider_txt">
+                        <h3>Grand Hotel Ter Duin</h3>
+                        <span>Hogeweg 55, Burgh-Haamstede, Netherlands</span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>Planning to go for a weekend or (mid) week away to a hotel in New Zealand? Ultimate relaxation at Grand Hotel Ter Duin for a walk along and unwind is an ideal accommodation. </p>
+                        <p class="from">from <span>$57</span></p>
+                        <div class="book_now">
+                            <a href="#">book now!</a>
+                            <a href="#" class="view_details"><img src="images/icon5.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_wrapper">
+                <div class="slider_inner">
+                    <div class="slider_img">
+                        <a href="#">
+<img src="images/MainPage_09.jpg">
+<img class="mapicon" src="images/map_icon.png">                        
+                        </a>
+                    </div>
+                    <div class="slider_txt">
+                        <h3>Grand Hotel Ter Duin</h3>
+                        <span>Hogeweg 55, Burgh-Haamstede, Netherlands</span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p>Planning to go for a weekend or (mid) week away to a hotel in New Zealand? Ultimate relaxation at Grand Hotel Ter Duin for a walk along and unwind is an ideal accommodation. </p>
+                        <p class="from">from <span>$57</span></p>
+                        <div class="book_now">
+                            <a href="#">book now!</a>
+                            <a href="#" class="view_details"><img src="images/icon5.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="view_all">view all hotels</a>
+    </div>
+    <div class="packages text-center">
+        <p class="view_popular">
+            view our <span>popular</span>
+        </p>
+        <h1>Packages</h1>
+        <div class="featured_package container hidden-xs">
+            <div class="main_row">
+                <div class="col-sm-6">
+                    <img src="images/MainPage_16.jpg">
+                </div>
+                <div class="col-sm-6 package_desc text-left">
+                    <h3>SHEETZ ALL-IN-ONE PACKAGE</h3>
+                    <span>3 Hotels</span>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="from">From <span>€149.00 </span></p>
+                    <span>per stay with two persons </span>
+                    <a href="#" class="readmore">read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="packages_wrapper clearfix">
+            <div class="col-sm-4 col-xs-12">
+                <div class="package_img">
+                    <img src="images/MainPage_20.jpg">
+                </div>
+                <div class="package_desc">
+                    <h3>SHEETZ ALL-IN-ONE PACKAGE</h3>
+                    <span>3 Hotels</span>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <div class="clearfix package_desc_inline">
+                        <div class="col-sm-7 col-xs-12">
+                            <p class="from">From <span>€149.00 </span></p>
+                            <span>per stay with two persons </span>
+                        </div>
+                        <div class="col-sm-5 col-xs-12">
+                            <a href="#" class="readmore">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="package_img">
+                    <img src="images/MainPage_22.jpg">
+                </div>
+                <div class="package_desc">
+                    <h3>SHEETZ HOTEL PACKAGE</h3>
+                    <span>3 Hotels</span>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <div class="clearfix package_desc_inline">
+                        <div class="col-sm-7 col-xs-12">
+                            <p class="from">From <span>€149.00 </span></p>
+                            <span>per stay with two persons </span>
+                        </div>
+                        <div class="col-sm-5 col-xs-12">
+                            <a href="#" class="readmore">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="package_img">
+                    <img src="images/MainPage_24.jpg">
+                </div>
+                <div class="package_desc">
+                    <h3>SHEETZ VARIOUS PACKAGE</h3>
+                    <span>3 Hotels</span>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <div class="clearfix package_desc_inline">
+                        <div class="col-sm-7 col-xs-12">
+                            <p class="from">From <span>€149.00 </span></p>
+                            <span>per stay with two persons </span>
+                        </div>
+                        <div class="col-sm-5 col-xs-12">
+                            <a href="#" class="readmore">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="events_at_sheetz responsive1">
+        <div class="events_wrapper clearfix">
+            <img src="images/MainPage_30.jpg">
+            <div class="package_desc text-left">
+                <h3>EVENTS AT SHEETZ</h3>
+                <p>Everything is possible: A multi-day conference at a party with live music, a great BBQ or a team building on the beach or in the woods. Our team ensures that everything goes smoothly.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#" class="readmore">read more</a>
+            </div>
+        </div>
+        <div class="events_wrapper clearfix">
+            <img src="images/MainPage_34.jpg">
+            <div class="package_desc text-left">
+                <h3>MEETINGS AT SHEETZ</h3>
+                <p>Everything is possible: A multi-day conference at a party with live music, a great BBQ or a team building on the beach or in the woods. Our team ensures that everything goes smoothly.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#" class="readmore">read more</a>
+            </div>
+        </div>
+        <div class="events_wrapper clearfix">
+            <img src="images/MainPage_37.jpg">
+            <div class="package_desc text-left">
+                <h3>WEDDINGS AT SHEETZ</h3>
+                <p>Everything is possible: A multi-day conference at a party with live music, a great BBQ or a team building on the beach or in the woods. Our team ensures that everything goes smoothly.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#" class="readmore">read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="common_gallery container-fluid text-center">
+        <h1 class="text-uppercase">
+            <p>Discover more about <span class="gold">#Sheetz</span></p>
+        </h1>
+        <span>from our customers and members</span>
+        <div id="freewall" class="free-wall"></div>
+    </div>
+    <div class="gallery_slider">
+        <div class="responsive2">
+            <div class="slider_wrapper">
+                <div class="slider_inner clearfix">
+                    <div class="slider_img">
+                        <a href="#">
+<img src="images/MainPage_57.jpg">
+                        </a>
+                    </div>
+                    <div class="slider_txt">
+                        <h3>Amazing moments</h3>
+                        <a href="#">#sheetz</a>
+                        <a href="#">#hotels</a>
+                        <a href="#">#vacation</a>
+
+                    </div>
+                    <a href="#" class="img_likes"><i class="fa fa-heart-o"></i> <span>250</span></a>
+                </div>
+            </div>
+            <div class="slider_wrapper">
+                <div class="slider_inner clearfix">
+                    <div class="slider_img">
+                        <a href="#">
+<img src="images/MainPage_59.jpg">
+                        </a>
+                    </div>
+                    <div class="slider_txt">
+                        <h3>Vacation</h3>
+                        <a href="#">#sheetz</a>
+                        <a href="#">#hotels</a>
+                        <a href="#">#vacation</a>
+
+                    </div>
+                    <a href="#" class="img_likes"><i class="fa fa-heart-o"></i> <span>250</span></a>
+                </div>
+            </div>
+            <div class="slider_wrapper">
+                <div class="slider_inner clearfix">
+                    <div class="slider_img">
+                        <a href="#">
+<img src="images/MainPage_61.jpg">
+                        </a>
+                    </div>
+                    <div class="slider_txt">
+                        <h3>Hotel room</h3>
+                        <a href="#">#sheetz</a>
+                        <a href="#">#hotels</a>
+                        <a href="#">#vacation</a>
+
+                    </div>
+                    <a href="#" class="img_likes"><i class="fa fa-heart-o"></i> <span>250</span></a>
+                </div>
+            </div>
+            <div class="slider_wrapper">
+                <div class="slider_inner clearfix">
+                    <div class="slider_img">
+                        <a href="#">
+<img src="images/MainPage_57.jpg">
+                        </a>
+                    </div>
+                    <div class="slider_txt">
+                        <h3>Amazing moments</h3>
+                        <a href="#">#sheetz</a>
+                        <a href="#">#hotels</a>
+                        <a href="#">#vacation</a>
+
+                    </div>
+                    <a href="#" class="img_likes"><i class="fa fa-heart-o"></i> <span>250</span></a>
+                </div>
+            </div>
+            <div class="slider_wrapper">
+                <div class="slider_inner clearfix">
+                    <div class="slider_img">
+                        <a href="#">
+<img src="images/MainPage_59.jpg">
+                        </a>
+                    </div>
+                    <div class="slider_txt">
+                        <h3>Vacation</h3>
+                        <a href="#">#sheetz</a>
+                        <a href="#">#hotels</a>
+                        <a href="#">#vacation</a>
+
+                    </div>
+                    <a href="#" class="img_likes"><i class="fa fa-heart-o"></i> <span>250</span></a>
+                </div>
+            </div>
+            <div class="slider_wrapper">
+                <div class="slider_inner clearfix">
+                    <div class="slider_img">
+                        <a href="#">
+<img src="images/MainPage_61.jpg">
+                        </a>
+                    </div>
+                    <div class="slider_txt">
+                        <h3>Hotel room</h3>
+                        <a href="#">#sheetz</a>
+                        <a href="#">#hotels</a>
+                        <a href="#">#vacation</a>
+
+                    </div>
+                    <a href="#" class="img_likes"><i class="fa fa-heart-o"></i> <span>250</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
