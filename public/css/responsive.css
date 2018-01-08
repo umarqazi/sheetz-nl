@@ -387,7 +387,8 @@
         padding-bottom: 30px;
         border-bottom: 1px solid #e7e7e7;
     }
-    .about_content {
+    .about_content,
+    .vacancy_content {
         padding-bottom: 0;
         border-bottom: none;
     }
@@ -501,6 +502,12 @@
     .our_hotels_content {
         padding: 30px 0 0;
     }
+    .general_txt {
+        padding: 30px 15px 10px;
+    }
+    .vacnacy_list ul {
+        padding: 30px 0 20px;
+    }
 }
 
 @media all and (max-width:480px) {
@@ -556,5 +563,10 @@
         width: 100%;
         padding: 10px 0;
         margin-left: 0;
+    }
+    .vacnacy_list ul li {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
     }
 }

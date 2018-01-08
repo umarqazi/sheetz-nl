@@ -22,3 +22,7 @@ Route::get('/aboutus', function () {
 Route::get('/our_hotels', function () {
     return view('our_hotels');
 });
+
+Route::get('/vacancies', function () {
+    return view('vacancies');
+});
