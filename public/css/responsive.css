@@ -24,6 +24,9 @@
     .main_nav .main_custom_nav > li > a {
         padding: 17px;
     }
+    .navbar-brand {
+        margin-right: 40px;
+    }
     .book_now a:first-child {
         width: 155px;
     }
@@ -81,6 +84,9 @@
     }
     .packages {
         margin: 40px auto;
+    }
+    .what_client_say {
+        margin-bottom: 0;
     }
     .responsive1 .events_wrapper {
         margin-bottom: 60px;
@@ -315,6 +321,12 @@
     .hotel_description h2 {
         font-size: 36px !important;
     }
+    .about_txt h3 {
+        margin-bottom: 30px;
+    }
+    .release_content {
+        padding: 20px 15px;
+    }
 }
 
 @media all and (max-width:767px) {
@@ -362,6 +374,10 @@
     .main_slider {
         padding-bottom: 30px;
         border-bottom: 1px solid #e7e7e7;
+    }
+    .about_content {
+        padding-bottom: 0;
+        border-bottom: none;
     }
     .hotel_filter {
         padding: 10px;
@@ -449,6 +465,20 @@
     .footer_desc {
         text-align: center;
     }
+    .release_content {
+        padding: 20px 15px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .what_client_say {
+        margin-top: 20px;
+    }
+    .about_txt {
+        margin: 30px auto;
+    }
+    .about_txt p {
+        text-align: left;
+    }
 }
 
 @media all and (max-width:480px) {
@@ -496,5 +526,13 @@
     }
     .common_gallery h1::after {
         bottom: 25px;
+    }
+    .ceo_img {
+        position: relative;
+    }
+    .ceo_txt {
+        width: 100%;
+        padding: 10px 0;
+        margin-left: 0;
     }
 }
