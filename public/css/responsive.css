@@ -1,0 +1,500 @@
+@media all and (min-width:1200px) {
+    .container,
+    .container-fluid {
+        padding: 0 40px;
+    }
+    .main_row {
+        margin: 0 -40px;
+    }
+}
+
+@media all and (min-width:768px) {
+    .responsive .slick-dots,
+    .responsive1 .slick-dots,
+    .responsive2 .slick-dots,
+    .responsive3 .slick-dots {
+        display: none !important;
+    }
+    .navbar-right {
+        margin-right: 0;
+    }
+}
+
+@media all and (max-width:1399px) {
+    .main_nav .main_custom_nav > li > a {
+        padding: 17px;
+    }
+    .book_now a:first-child {
+        width: 155px;
+    }
+    .main_nav .myreservations a,
+    .book_now a:first-child,
+    .view_all,
+    .package_desc_inline > div .readmore,
+    .btn_custom,
+    .join_content a {
+        padding: 0 20px !important;
+    }
+    .main_slider .slider_wrapper {
+        margin: 0 10px;
+    }
+    .packages_wrapper .package_desc {
+        padding: 20px 10px;
+    }
+    .main_slider {
+        padding: 0 5px;
+    }
+    .packages_wrapper {
+        margin: 40px auto;
+        padding: 0 15px;
+    }
+}
+
+@media all and (max-width:1199px) {
+    .main_row {
+        margin: 0 -15px;
+    }
+    .navbar-brand {
+        margin-right: 0;
+        padding-right: 5px;
+    }
+    .main_nav .main_custom_nav > li > a {
+        padding: 17px 10px;
+    }
+    .myreservations {
+        margin-right: 0;
+    }
+    .main_nav .myreservations a,
+    .book_now a:first-child,
+    .view_all,
+    .package_desc_inline > div .readmore,
+    .btn_custom,
+    .join_content a {
+        padding: 0 10px !important;
+    }
+    .main_nav .myreservations a img {
+        display: inline-block;
+        padding-right: 5px;
+    }
+    .main_hd {
+        margin: 55px auto;
+    }
+    .packages {
+        margin: 40px auto;
+    }
+    .responsive1 .events_wrapper {
+        margin-bottom: 60px;
+        width: calc(100% - 150px) !important;
+        min-height: 100%;
+        padding-bottom: 20px;
+    }
+    .events_at_sheetz {
+        padding: 0 15px;
+    }
+    .events_at_sheetz h1 {
+        margin-bottom: 60px;
+    }
+    .package_desc {
+        padding: 30px 15px 0 40px;
+    }
+    .package_desc_inline > div {
+        padding: 0;
+        margin: 10px auto;
+    }
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+    .social_links {
+        padding: 30px 0;
+        margin-bottom: 30px;
+    }
+    .join_sheets {
+        padding: 30px 15px 30px;
+    }
+    .join_content {
+        padding-left: 40px;
+    }
+    footer h4 {
+        margin-bottom: 20px;
+    }
+    .footer_links li a {
+        padding-bottom: 10px;
+    }
+    .footer_desc {
+        margin: 20px 0;
+    }
+    .copyrights {
+        margin-top: 20px;
+    }
+}
+
+@media all and (max-width:991px) {
+
+    .main_hd {
+        margin: 40px auto;
+    }
+    .main_nav .myreservations a img {
+        display: block;
+        padding-right: 0;
+    }
+    .main_nav .myreservations a {
+        border: none;
+        height: auto !important;
+    }
+    .main_nav .myreservations a:before {
+        content: none;
+    }
+    .main_nav .myreservations a span {
+        display: none;
+    }
+    .main_nav .myreservations a {
+        padding-right: 0;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .main_nav .navbar-header {
+        float: none;
+        clear: both;
+    }
+    .main_nav .navbar-toggle {
+        display: block;
+        border: none;
+        margin-right: -10px;
+        margin-bottom: 0;
+    }
+    .main_nav .navbar-toggle:hover,
+    .main_nav .navbar-toggle:focus,
+    .main_nav .navbar-toggle:active {
+        background: none;
+    }
+    .main_nav .collapse {
+        display: none !important;
+        float: none;
+    }
+    .main_nav .collapse.in {
+        display: block !important;
+        overflow-y: auto !important;
+        padding: 0;
+    }
+    .main_nav .collapsing {
+        padding: 0 !important;
+    }
+    .main_custom_nav {
+        float: none;
+        margin: 0;
+    }
+    .main_custom_nav li {
+        float: none;
+        clear: both;
+        display: block;
+    }
+    .main_nav .main_custom_nav > li > a {
+        padding: 10px;
+    }
+    .myreservations {
+        position: absolute;
+        right: 50px;
+        top: 15px;
+    }
+    .main_nav {
+        padding: 15px 0;
+        background-color: rgba(255, 255, 255, .9);
+    }
+    .hotel_filter {
+        padding: 10px;
+        width: 700px;
+    }
+    footer h4 {
+        font-size: 14px;
+    }
+    .filter_inner {
+        padding: 0 15px;
+        width: calc(100% - 60px);
+    }
+    .filter_search {
+        width: 60px;
+        height: 60px;
+    }
+    .filter_inner > li {
+        padding: 12px 15px;
+    }
+    .filter_inner .dropdown > a {
+        text-align: left;
+        font-size: 12px;
+    }
+    .filter_inner li .datepicker,
+    .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+        width: calc(100% - 50px);
+        padding: 0;
+    }
+    .main_slider .slider_inner .slider_img,
+    .package_img {
+        height: 150px;
+    }
+    .slider_txt > span {
+        margin-bottom: 10px;
+    }
+    .slider_txt > p,
+    .package_desc p {
+        margin-top: 15px;
+    }
+    .from {
+        margin-bottom: 10px;
+    }
+    .book_now a:first-child {
+        width: 135px;
+        margin-right: 5px;
+    }
+    .view_details {
+        padding: 10px;
+    }
+    .main_nav .myreservations a,
+    .book_now a:first-child,
+    .view_all,
+    .package_desc_inline > div .readmore,
+    .btn_custom,
+    .join_content a {
+        height: 40px;
+        line-height: 38px;
+    }
+    .events_at_sheetz h1 {
+        margin-bottom: 40px;
+    }
+    .responsive1 .events_wrapper {
+        margin-bottom: 40px;
+        width: calc(100% - 100px) !important;
+    }
+    .free-wall {
+        margin: 30px 0 20px;
+    }
+    .gallery_slider .slider_img {
+        height: 250px;
+    }
+    .icon_set {
+        padding: 25px;
+    }
+    .join_sheets h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .join_content form {
+        margin: 20px 0 30px;
+    }
+    .join_content form input {
+        width: 190px;
+    }
+    .form-control {
+        height: 40px;
+        line-height: 38px;
+    }
+    .footer_links li a,
+    .footer_desc {
+        font-size: 12px;
+    }
+    .footer_social li a {
+        padding-right: 10px;
+        font-size: 16px;
+    }
+    .social_links li a {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        margin: 0 5px;
+    }
+    .social_links li p {
+        font-size: 14px;
+        padding-right: 10px;
+    }
+    .gallery_slider {
+        padding: 30px 15px 20px;
+    }
+    .packages_wrapper .package_desc {
+        padding: 20px 0;
+    }
+    .hotel_description h2 {
+        font-size: 36px !important;
+    }
+}
+
+@media all and (max-width:767px) {
+    .hotel_description h1,
+    .main_hd,
+    .packages > h1 {
+        font-size: 36px;
+    }
+    .packages > h1 {
+        margin-bottom: 30px;
+    }
+    .responsive3 .package_desc h3,
+    .event_slider .package_desc h3,
+    .slider_txt h3 {
+        font-size: 18px;
+    }
+    .responsive2 .slider_txt h3 {
+        font-size: 12px;
+    }
+    .slick-dots li {
+        width: 10px;
+    }
+    .slick-dots {
+        position: relative;
+        bottom: -15px;
+        padding: 10px;
+    }
+    .slick-dots li button::before {
+        font-size: 10px;
+    }
+    .navbar-brand {
+        padding: 10px 15px;
+    }
+    .main_nav .navbar-toggle {
+        margin-right: 5px;
+        margin-top: 0;
+    }
+    .myreservations {
+        top: 0;
+    }
+    .main_banner {
+        height: 420px;
+    }
+    .intro,
+    .main_slider {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    .hotel_filter {
+        padding: 10px;
+        width: 80%;
+        position: relative;
+        bottom: 0;
+        margin: 30px auto 0;
+        background-color: transparent;
+    }
+    .filter_inner {
+        padding: 0 0 20px;
+        width: 100%;
+    }
+    .filter_search {
+        width: 100%;
+        height: 50px;
+        position: relative;
+    }
+    .filter_search span {
+        display: inline-block;
+        padding-left: 15px;
+        color: #fff;
+    }
+    .hotel_filter > ul {
+        text-align: left;
+    }
+    .filter_inner > li {
+        width: 100%;
+        float: none;
+        padding: 20px 0;
+        min-height: 100%;
+        line-height: normal;
+    }
+    .main_slider .slider_inner .slider_img,
+    .package_img {
+        height: 170px;
+    }
+    .events_at_sheetz {
+        padding: 0 15px 50px;
+    }
+    .events_at_sheetz h1 span {
+        padding: 10px;
+        font-size: 30px;
+    }
+    .event_slider .events_wrapper {
+        padding: 0 7.5px;
+    }
+    .event_slider .package_img {
+        height: 180px;
+    }
+    .event_slider .package_desc {
+        padding: 20px 0 0;
+    }
+    .responsive2 .slick-dots {
+        display: none !important;
+    }
+    .package_desc > a {
+        margin: 20px auto 0 0;
+    }
+    .gallery_slider .slider_img {
+        height: 200px;
+    }
+    .social_links {
+        margin-bottom: 10px;
+    }
+    .join_sheets h2 {
+        margin-bottom: 40px;
+    }
+    .join_content {
+        padding: 0;
+        margin-top: 30px;
+    }
+    footer {
+        padding-top: 30px;
+    }
+    .join_content form input {
+        margin-right: 10px;
+        width: calc(100% - 58px);
+    }
+    .join_community a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .footer_desc {
+        text-align: center;
+    }
+}
+
+@media all and (max-width:480px) {
+    .main_slider .slider_inner .slider_img,
+    .package_img {
+        height: auto;
+    }
+    .responsive .slider_txt > p:first-of-type {
+        display: none;
+    }
+    .packages_wrapper .package_desc {
+        text-align: center;
+        border: none;
+        padding: 20px 15px;
+    }
+    .responsive3 .slick-track > div {
+        border: 2px solid #424242;
+        padding: 0;
+    }
+    .package_desc_inline > div .readmore {
+        width: 150px;
+        margin: 0 auto;
+    }
+    .package_desc > a {
+        margin: 20px auto 0;
+        width: 150px;
+    }
+    .event_slider .package_img {
+        height: auto;
+    }
+    .event_slider .package_desc {
+        text-align: center;
+    }
+    .gallery_slider .slider_img {
+        height: 240px;
+    }
+    .common_gallery h1 {
+        font-size: 26px;
+    }
+    .common_gallery h1 > p {
+        padding: 0;
+        width: 250px;
+        margin: 0 auto;
+        line-height: 30px;
+    }
+    .common_gallery h1::after {
+        bottom: 25px;
+    }
+}
