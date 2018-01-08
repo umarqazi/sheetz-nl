@@ -3,27 +3,17 @@
 @font-face {
     font-family: 'Proxima Nova';
     src: url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot');
-    src: url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff2') format('woff2'),
-    url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff') format('woff'),
-    url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf') format('truetype'),
-    url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular') format('svg');
+    src: url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff2') format('woff2'), url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff') format('woff'), url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf') format('truetype'), url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'proxima_nova_ltsemibold';
     src: url('../fonts/Mark Simonson - Proxima Nova Semibold-webfont.eot');
-    src: url('../fonts/Mark Simonson - Proxima Nova Semibold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Mark Simonson - Proxima Nova Semibold-webfont.woff2') format('woff2'),
-    url('../fonts/Mark Simonson - Proxima Nova Semibold-webfont.woff') format('woff'),
-    url('../fonts/Mark Simonson - Proxima Nova Semibold-webfont.ttf') format('truetype'),
-    url('../fonts/Mark Simonson - Proxima Nova Semibold-webfont.svg#proxima_nova_ltsemibold') format('svg');
+    src: url('../fonts/Mark Simonson - Proxima Nova Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Mark Simonson - Proxima Nova Semibold-webfont.woff2') format('woff2'), url('../fonts/Mark Simonson - Proxima Nova Semibold-webfont.woff') format('woff'), url('../fonts/Mark Simonson - Proxima Nova Semibold-webfont.ttf') format('truetype'), url('../fonts/Mark Simonson - Proxima Nova Semibold-webfont.svg#proxima_nova_ltsemibold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 html,
@@ -37,10 +27,9 @@ body {
     min-height: 100%;
 }
 
+
 a {
     color: #424242 !important;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
 }
 
 a:hover,
@@ -62,6 +51,8 @@ h6 {
 
 p {
     margin-bottom: 0;
+    font-family: 'PT Serif', serif;
+    line-height: 25px;
 }
 
 ul,
@@ -72,12 +63,8 @@ li {
     margin: 0;
 }
 
-/** bootstrap modified **/
 
-.container,
-.container-fluid {
-    padding: 0 40px;
-}
+/** bootstrap modified **/
 
 .navbar-brand {
     height: auto;
@@ -92,15 +79,13 @@ li {
     margin: 0 auto;
 }
 
-.main_row {
-    margin: 0 -40px;
-}
-
 .navbar-default {
     background-color: transparent;
     border: none;
     border-radius: 0;
     margin: 0 auto;
+    min-height: 100%;
+    height: auto;
 }
 
 .free-wall {
@@ -110,6 +95,43 @@ li {
 .brick img {
     margin: 0;
     display: block;
+}
+
+button {
+    background: transparent;
+    border-radius: 0;
+}
+
+.form-control {
+    border-radius: 0;
+    border: 2px solid #e1e1e1;
+    font-family: 'Proxima Nova';
+    font-size: 12px;
+    height: 50px;
+    padding: 0 10px;
+    line-height: 50px;
+}
+
+.form-control:focus {
+    border-color: #ba9e76;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+textarea .form-control {
+    height: auto;
+    line-height: normal;
+}
+
+.lang_list .dropdown-menu {
+    min-width: auto;
+    right: 0;
+    width: auto;
+    padding: 0;
+}
+
+.navbar-collapse {
+    float: left;
 }
 
 /* custom bootstrap ends here */
@@ -141,7 +163,6 @@ li {
     font-size: 12px;
     padding: 10px 20px;
     opacity: .6;
-
 }
 
 .lang_list {
@@ -161,15 +182,6 @@ li {
 .lang_list > ul li a span {
     display: inline-block;
     padding: 0 10px;
-}
-
-.lang_list .dropdown-menu {
-    min-width: auto;
-    text-align: center;
-    right: 0;
-    top: 20px;
-    width: auto;
-    padding: 0;
 }
 
 .lang_list .dropdown-menu > li > a {
@@ -194,18 +206,23 @@ li {
 .main_nav .main_custom_nav > li > a {
     display: block;
     font-weight: 500;
-    padding: 17px 35px;
+    padding: 17px 34px;
 }
 
 .main_nav .myreservations a,
 .book_now a:first-child,
 .view_all,
-.package_desc_inline > div .readmore {
+.package_desc_inline > div .readmore,
+.btn_custom,
+.join_content a {
     font-size: 12px;
     font-weight: 500;
-    padding: 15px 30px !important;
+    padding: 0 25px !important;
     border: 2px solid #ba9e76;
     text-transform: uppercase;
+    height: 50px;
+    line-height: 48px;
+    letter-spacing: 2px;
 }
 
 .main_nav .navbar-default .myreservations > li > a:hover,
@@ -219,8 +236,13 @@ li {
 .view_all:active,
 .package_desc_inline > div .readmore:hover,
 .package_desc_inline > div .readmore:focus,
-.package_desc_inline > div .readmore:active {
-    background-color: #ba9e76;
+.package_desc_inline > div .readmore:active,
+.btn_custom:hover,
+.btn_custom:focus,
+.btn_custom:active,
+.join_content a:hover,
+.join_content a:focus,
+.join_content a:active {
     color: #fff !important;
 }
 
@@ -229,9 +251,16 @@ li {
     padding-right: 10px;
 }
 
+
 /* main content styles goes here .... main banner */
 
+.intro {
+    position: relative;
+}
+
 .main_banner {
+    padding: 0 15px;
+    position: relative;
     height: 670px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -268,15 +297,18 @@ li {
 
 .hotel_description p {
     color: #fff;
-    font-family: 'PT Serif', serif;
     margin-bottom: 40px;
 }
 
 .hotel_filter {
     padding: 18px;
     background-color: rgba(245, 245, 245, .6);
-    max-width: 940px;
+    width: 940px;
     margin: 0 auto;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
 }
 
 .hotel_filter > ul {
@@ -310,8 +342,8 @@ li {
 }
 
 .filter_inner .dropdown > a {
-    opacity: .6;
     display: block;
+    color: #9e9e9e !important;
 }
 
 .filter_search {
@@ -332,18 +364,38 @@ li {
     right: 0;
 }
 
-.filter_search:hover {
-    opacity: .8;
-}
-
-
 .filter_inner li .datepicker {
     border: none;
-    width: 100%;
     -webkit-box-shadow: none;
     box-shadow: none;
     outline: none;
-    width: calc(100% - 80px);
+    width: calc(100% - 60px);
+    height: auto !important;
+    line-height: normal;
+    font-size: 14px;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: calc(100% - 60px);
+}
+
+.bootstrap-select button {
+    border-radius: 0;
+    border: none;
+    padding: 0;
+}
+
+.bootstrap-select .dropdown-toggle:hover,
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select .dropdown-toggle:active {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: none;
+}
+
+.bs-caret {
+    display: none;
 }
 
 .main_hd {
@@ -424,8 +476,6 @@ li {
 .slider_txt > p,
 .package_desc p {
     margin-top: 35px;
-    line-height: 25px;
-    font-family: 'PT Serif', serif;
 }
 
 .from {
@@ -440,6 +490,7 @@ li {
 
 .book_now {
     text-align: center;
+    padding-bottom: 25px;
 }
 
 .book_now a {
@@ -449,7 +500,7 @@ li {
 }
 
 .book_now a:first-child {
-    width: 210px;
+    width: 225px;
     margin-right: 15px;
 }
 
@@ -476,6 +527,7 @@ li {
     padding: 5px 20px;
     font-weight: 500;
     margin-bottom: 20px;
+    font-family: inherit;
 }
 
 .packages > h1 {
@@ -492,6 +544,7 @@ li {
 .featured_package div > img {
     border: 3px solid #000;
     padding: 15px;
+    max-width: 100%;
 }
 
 .package_desc {
@@ -534,8 +587,11 @@ li {
     font-family: 'Proxima Nova';
     font-weight: 600;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 0 10px;
     font-size: 12px;
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: 2px;
 }
 
 .package_desc > a:hover,
@@ -544,6 +600,8 @@ li {
     color: #000 !important;
     background-color: #fff;
     border-color: #000;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 
 .packages_wrapper {
@@ -552,13 +610,13 @@ li {
 }
 
 .packages_wrapper .package_desc {
-    padding: 20px 30px;
+    padding: 20px;
     text-align: left;
     border-bottom: 3px solid #424242;
 }
 
 .package_desc_inline > div {
-    padding: 0;
+    padding: 0 5px;
     margin: 30px auto;
 }
 
@@ -576,11 +634,25 @@ li {
     padding: 0 40px;
 }
 
+.events_at_sheetz h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+.events_at_sheetz h1 span {
+    padding: 10px 50px;
+    display: inline-block;
+    background-color: #ba9e76;
+}
+
 .responsive1 .slick-track {
     width: 100% !important;
 }
 
-.events_wrapper {
+.responsive1 .events_wrapper {
     background-color: #f8f8f8;
     margin-bottom: 60px;
     width: calc(100% - 260px) !important;
@@ -588,20 +660,18 @@ li {
     min-height: 450px;
 }
 
-.events_wrapper:nth-of-type(2n + 1) {
+.responsive1 .events_wrapper:nth-of-type(2n + 1) {
     margin-right: auto;
 }
 
-.events_wrapper:nth-of-type(2n) {
+.responsive1 .events_wrapper:nth-of-type(2n) {
     margin-left: auto;
 }
 
-.events_wrapper > div,
-.events_wrapper > img {
+.responsive1 .events_wrapper > div {
     float: left;
-    width: 100%;
-    max-width: 50%;
-    height: inherit;
+    width: 50%;
+    height: 100%;
 }
 
 .common_gallery {
@@ -656,7 +726,7 @@ li {
 }
 
 .gallery_slider .slider_wrapper {
-    padding: 0 15px;
+    padding: 0 5px;
 }
 
 .gallery_slider .slider_img {
@@ -667,6 +737,7 @@ li {
     filter: grayscale(1);
     height: 370px;
 }
+
 
 /*
 .gallery_slider .slider_img:after {
@@ -698,15 +769,13 @@ li {
     height: 100%;
 }
 
-
-
 .gallery_slider .slider_txt h3 {
     margin-bottom: 10px;
 }
 
 .gallery_slider .slider_txt {
     text-align: left;
-    padding: 20px 15px 20px 0;
+    padding: 20px 15px 0 0;
     float: left;
     opacity: 0;
     -webkit-transition: all .3s ease-in;
@@ -742,4 +811,195 @@ li {
 .gallery_slider .slider_inner:hover .slider_txt,
 .gallery_slider .slider_inner:hover .img_likes {
     opacity: 1;
+}
+
+.social_links {
+    border-bottom: 1px solid #000;
+    padding: 40px 0;
+    margin-bottom: 50px;
+}
+
+.social_links li {
+    display: inline-block;
+}
+
+.social_links li p {
+    font-size: 18px;
+    padding-right: 20px
+}
+
+.social_links li a {
+    display: block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    color: #fff !important;
+    background-color: #000;
+    border: 1px solid #000;
+    margin: 0 10px;
+    font-size: 18px;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.social_links li a:hover,
+.social_links li a:focus,
+.social_links li a:active {
+    color: #000 !important;
+    background-color: #fff;
+}
+
+.join_sheets {
+    padding: 30px 0 80px;
+}
+
+.icon_set {
+    border: 5px solid #000;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    font-size: 0;
+}
+
+.icon_set::before {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    top: -5px;
+    height: 5px;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.icon_set:after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 5px;
+    width: 90%;
+}
+
+.icon_set span {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% / 3);
+    padding: 10px;
+}
+
+.icon_set span img {
+    max-width: 100%;
+}
+
+.join_content button,
+.join_content a {
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 0;
+    background: transparent;
+    display: inline-block;
+}
+
+.join_content label {
+    font-family: 'Proxima Nova';
+    font-size: 12px;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.join_content {
+    padding-left: 80px;
+}
+
+.join_sheets h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+}
+
+.join_content form {
+    margin: 40px 0;
+}
+
+.join_content form input {
+    width: 220px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* footer styls */
+
+footer {
+    border-top: 1px solid #e1e1e1;
+    padding-top: 50px;
+}
+
+.footer_desc {
+    line-height: normal;
+    margin: 30px 0;
+    font-family: 'PT Serif', serif;
+}
+
+.footer_logo {
+    display: block;
+}
+
+.footer_logo {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer_logo img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+footer h4 {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.footer_links li a {
+    display: block;
+    padding-bottom: 20px;
+    font-family: 'PT Serif', serif;
+}
+
+.footer_links li:last-child a {
+    padding-bottom: 0;
+}
+
+.footer_social li {
+    display: inline-block;
+}
+
+.footer_social li a {
+    display: block;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.footer_social li:last-child a {
+    padding-right: 0;
+}
+
+.copyrights {
+    background-color: #e7e7e7;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.copyrights span {
+    display: block;
+    opacity: .6;
 }
