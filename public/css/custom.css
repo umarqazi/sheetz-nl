@@ -1037,7 +1037,8 @@ footer h4 {
     font-weight: 600;
 }
 
-.about_content .hotel_description h1 {
+.about_content .hotel_description h1,
+.vacancy_content .hotel_description h1 {
     background-color: transparent;
     color: #fff;
 }
@@ -1217,4 +1218,49 @@ footer h4 {
 .our_locations iframe {
     width: 100%;
     height: 100%;
+}
+
+/* vacancy page styles */
+
+.vacancy_content .main_banner {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url(../images/vacancy_banner.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url(../images/vacancy_banner.jpg) no-repeat center center/cover;
+}
+
+.vacnacy_list {
+    max-width: 660px;
+    margin: 0 auto;
+}
+
+.vacnacy_list ul {
+    padding: 50px 0 20px;
+}
+
+.vacnacy_list ul li {
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.vacnacy_list ul li a {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 25px;
+    text-align: left;
+    border: 2px solid transparent;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.vacnacy_list ul li a span {
+    display: block;
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: 'PT Serif', serif;
+    opacity: .6;
+}
+
+.vacnacy_list ul li a:hover {
+    border-color: #ba9e76;
 }
