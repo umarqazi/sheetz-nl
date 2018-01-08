@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/aboutus', function () {
     return view('aboutus');
 });
+
+Route::get('/our_hotels', function () {
+    return view('our_hotels');
+});

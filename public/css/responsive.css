@@ -132,6 +132,9 @@
     .copyrights {
         margin-top: 20px;
     }
+    .our_hotels_content .main_slider .slider_wrapper {
+        width: 50%;
+    }
 }
 
 @media all and (max-width:991px) {
@@ -327,6 +330,15 @@
     .release_content {
         padding: 20px 15px;
     }
+    .our_hotels_content {
+        padding: 50px 0 30px;
+    }
+    .our_hotels_content h1 {
+        margin-bottom: 30px;
+    }
+    .our_locations {
+        height: 550px;
+    }
 }
 
 @media all and (max-width:767px) {
@@ -478,6 +490,16 @@
     }
     .about_txt p {
         text-align: left;
+    }
+    .our_locations {
+        height: 500px;
+    }
+    .our_hotels_content .main_slider .slider_wrapper {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .our_hotels_content {
+        padding: 30px 0 0;
     }
 }
 
