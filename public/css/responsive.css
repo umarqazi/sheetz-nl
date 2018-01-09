@@ -508,6 +508,15 @@
     .vacnacy_list ul {
         padding: 30px 0 20px;
     }
+    .vacnacy_details .general_txt {
+        padding: 0 0 20px;
+    }
+    .vacnacy_details .general_txt p {
+        margin-bottom: 20px;
+    }
+    .vacnacy_details > span {
+        margin: 0 0 20px;
+    }
 }
 
 @media all and (max-width:480px) {

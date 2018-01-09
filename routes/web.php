@@ -26,3 +26,7 @@ Route::get('/our_hotels', function () {
 Route::get('/vacancies', function () {
     return view('vacancies');
 });
+
+Route::get('/vacancy_details', function () {
+    return view('vacancy_details');
+});
