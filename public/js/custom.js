@@ -168,11 +168,11 @@ $(document).ready(function () {
 
     // common gallery
 
-    var temp = "<div class='brick' style='width:{width}px;'><a href='#' class='like_img'><i class='fa fa-heart-o'></i><span>123</span></a><img src='images/{index}.jpg' width='100%'></div>";
+    var temp = "<div class='brick' style='width:{width}px;'><a href='#' class='like_img'><i class='fa fa-heart-o'></i><span>123</span></a><img src='images/gallery/{index}.jpg' width='100%'></div>";
     var w = 1,
         h = 1,
         html = '',
-        limitItem = 6;
+        limitItem = 5;
     for (var i = 0; i < limitItem; ++i) {
         w = 1 + 3 * Math.random() << 0;
         html += temp.replace(/\{width\}/g, w * 150).replace("{index}", i + 1);
