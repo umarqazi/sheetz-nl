@@ -141,6 +141,44 @@ textarea .form-control {
     cursor: grab;
 }
 
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs > li {
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.nav-tabs > li > a {
+    margin-right: 0;
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #bdbdbd !important;
+    padding: 5px 0;
+}
+
+.nav-tabs > li > a:hover {
+    border-color: #ba9e76;
+    background: transparent;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    border: none;
+    border-bottom: 3px solid #ba9e76;
+    font-weight: 600;
+    color: inherit !important;
+}
+
+
 /* custom bootstrap ends here */
 
 /** top header **/
@@ -571,6 +609,7 @@ header .main_nav {
 
 .package_desc p:last-of-type {
     margin-bottom: 0;
+    font-size: 14px;
 }
 
 .featured_package .package_desc > span:last-of-type {
@@ -584,7 +623,7 @@ header .main_nav {
 
 .package_img img {
     height: 100%;
-    width: 100%;
+    max-width: 100%;
 }
 
 .package_desc > a,
@@ -621,7 +660,7 @@ header .main_nav {
 
 .packages_wrapper {
     margin: 60px auto;
-    padding: 0 20px;
+    padding: 0 25px;
 }
 
 .packages_wrapper .package_desc {
@@ -1039,7 +1078,8 @@ footer h4 {
 
 .about_content .hotel_description h1,
 .vacancy_content .hotel_description h1,
-.package_content h1 {
+.package_content h1,
+.package_main h1 {
     background-color: transparent;
     color: #fff;
 }
@@ -1402,4 +1442,46 @@ footer h4 {
     background-color: #ba9e76;
     right: -24px;
     margin: 0 auto;
+}
+
+/* packages main page styles */
+
+.package_main .main_banner {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url(../images/packages_banner1.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url(../images/packages_banner1.jpg) no-repeat center center/cover;
+}
+
+.package_main .hotel_description p strong {
+    color: #000;
+    background-color: #ba9e76;
+    padding: 2px 10px;
+}
+
+.packages_tabs {
+    width: 750px;
+    padding: 0 15px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.package_intro {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.package_intro h1 {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.tab-pane .packages_wrapper {
+    font-size: 0;
+}
+
+.tab-pane .packages_wrapper > div {
+    margin-bottom: 50px;
+    display: inline-block;
+    vertical-align: top;
+    float: none;
 }
