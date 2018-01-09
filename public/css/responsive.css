@@ -339,6 +339,12 @@
     .our_locations {
         height: 550px;
     }
+    .package_availability > ul {
+        padding-bottom: 40px;
+    }
+    .package_availability > ul li {
+        padding: 0 30px;
+    }
 }
 
 @media all and (max-width:767px) {
@@ -388,7 +394,8 @@
         border-bottom: 1px solid #e7e7e7;
     }
     .about_content,
-    .vacancy_content {
+    .vacancy_content,
+    .package_content {
         padding-bottom: 0;
         border-bottom: none;
     }
@@ -516,6 +523,39 @@
     }
     .vacnacy_details > span {
         margin: 0 0 20px;
+    }
+    .package_availability {
+        padding: 40px 15px 0;
+    }
+    .package_availability > ul {
+        padding-bottom: 0;
+    }
+    .package_availability > ul li:first-child {
+        padding-left: 30px;
+    }
+    .package_availability > ul:first-of-type {
+        border-bottom: 1px solid #e1e1e1;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .package_availability > ul:last-of-type li {
+        text-align: center;
+        padding: 0 0 30px !important;
+        display: block;
+        float: none;
+        clear: both;
+    }
+    .package_availability .from {
+        text-align: center;
+    }
+    .package_include {
+        margin: 20px auto 30px;
+    }
+    .our_hotels_content h1 {
+        font-size: 24px;
+    }
+    .our_hotels_content h1 span::before {
+        width: 120%;
     }
 }
 

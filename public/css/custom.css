@@ -1038,7 +1038,8 @@ footer h4 {
 }
 
 .about_content .hotel_description h1,
-.vacancy_content .hotel_description h1 {
+.vacancy_content .hotel_description h1,
+.package_content h1 {
     background-color: transparent;
     color: #fff;
 }
@@ -1194,6 +1195,7 @@ footer h4 {
 
 .our_hotels_content h1 {
     margin-bottom: 50px;
+    text-transform: uppercase;
 }
 
 .our_hotels_content .view_all {
@@ -1299,13 +1301,15 @@ footer h4 {
     margin-bottom: 20px;
 }
 
-.vacnacy_details .general_txt li {
+.vacnacy_details .general_txt li,
+.package_include li {
     font-family: 'PT Serif', serif;
     padding: 0 5px 5px 15px;
     position: relative;
 }
 
-.vacnacy_details .general_txt li::before {
+.vacnacy_details .general_txt li::before,
+.package_include li::before {
     position: absolute;
     content: "";
     width: 4px;
@@ -1324,4 +1328,78 @@ footer h4 {
 
 .vacnacy_details > a {
     display: block;
+}
+
+/* package card styles */
+
+.package_content .main_banner {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url(../images/packages_banner.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url(../images/packages_banner.jpg) no-repeat center center/cover;
+}
+
+.package_availability {
+    max-width: 790px;
+    padding: 60px 15px 0;
+    margin: 0 auto;
+}
+
+.package_availability > ul {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.package_availability > ul li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 35px;
+}
+
+.package_availability > ul li:last-child {
+    padding-right: 0;
+}
+
+.package_availability > ul li:first-child {
+    padding-left: 0;
+}
+
+.package_availability > ul li img {
+    display: block;
+    margin: 0 auto 20px;
+    min-height: 24px;
+}
+
+.package_availability > ul li img + span {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+
+.package_availability .from {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.package_availability .from + span {
+    display: block;
+    color: #bbb;
+}
+
+.package_availability .view_all {
+    margin: 0 auto;
+}
+
+.our_hotels_content h1 span {
+    position: relative;
+    letter-spacing: 3px;
+}
+
+.our_hotels_content h1 span::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 4px;
+    width: 115%;
+    background-color: #ba9e76;
+    right: -24px;
+    margin: 0 auto;
 }

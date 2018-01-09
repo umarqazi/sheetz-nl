@@ -30,3 +30,7 @@ Route::get('/vacancies', function () {
 Route::get('/vacancy_details', function () {
     return view('vacancy_details');
 });
+
+Route::get('/package_card', function () {
+    return view('package_card');
+});
