@@ -1264,3 +1264,64 @@ footer h4 {
 .vacnacy_list ul li a:hover {
     border-color: #ba9e76;
 }
+
+/* vacncy details */
+
+.vacnacy_details_wrapper .main_banner {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url(../images/vacancy_banner1.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url(../images/vacancy_banner1.jpg) no-repeat center center/cover;
+}
+
+.vacnacy_details {
+    max-width: 930px;
+    padding: 0 15px;
+    margin: 35px auto;
+}
+
+.vacnacy_details > p {
+    padding: 0 0 30px;
+}
+
+.vacnacy_details .general_txt {
+    max-width: 100%;
+    padding: 0 0 30px;
+}
+
+.vacnacy_details .general_txt p {
+    margin-bottom: 30px;
+}
+
+.vacnacy_details .general_txt p:last-of-type {
+    margin-bottom: 0;
+}
+
+.vacnacy_details .general_txt h4 {
+    margin-bottom: 20px;
+}
+
+.vacnacy_details .general_txt li {
+    font-family: 'PT Serif', serif;
+    padding: 0 5px 5px 15px;
+    position: relative;
+}
+
+.vacnacy_details .general_txt li::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #ba9e76;
+    left: 2px;
+    top: 8px;
+}
+
+.vacnacy_details > span {
+    display: block;
+    color: #b8b8b8;
+    margin: 20px 0;
+}
+
+.vacnacy_details > a {
+    display: block;
+}
