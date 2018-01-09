@@ -42,3 +42,7 @@ Route::get('/packages', function () {
 Route::get('/wellness_card', function () {
     return view('wellness_card');
 });
+
+Route::get('/gifts', function () {
+    return view('gifts');
+});

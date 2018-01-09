@@ -348,6 +348,16 @@
     .package_availability > ul li {
         padding: 0 30px;
     }
+    .vouchars_wrapper > div {
+        width: 350px;
+    }
+    .vouchars_wrapper .vouchar_img {
+        min-height: 175px;
+    }
+    .have_you_received,
+    .terms_conditions {
+        padding: 40px 15px;
+    }
 }
 
 @media all and (max-width:767px) {
@@ -400,7 +410,8 @@
     .vacancy_content,
     .package_content,
     .package_main,
-    .wellness {
+    .wellness,
+    .gifts {
         padding-bottom: 0;
         border-bottom: none;
     }
@@ -582,6 +593,27 @@
     .nav-tabs > li > a {
         font-size: 16px;
     }
+    .gift_wrapper .packages_wrapper > div {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .gift_wrapper .package_img {
+        height: auto;
+    }
+    .gift_wrapper .package_desc {
+        padding: 20px 15px;
+        text-align: center;
+    }
+    .gifts_wrapper .package_availability {
+        padding: 20px 15px 0;
+    }
+    .gift_wrapper .package_desc_inline > div .readmore {
+        width: 180px;
+        margin: 0 auto;
+    }
+    .vouchars_wrapper {
+        padding: 40px 0 0;
+    }
 }
 
 @media all and (max-width:480px) {
@@ -652,5 +684,10 @@
         float: none;
         width: 100%;
         margin-bottom: 10px;
+    }
+    .vouchars_wrapper > div {
+        width: auto;
+        padding: 10px;
+        margin: 0 0 20px;
     }
 }
