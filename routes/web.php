@@ -34,3 +34,7 @@ Route::get('/vacancy_details', function () {
 Route::get('/package_card', function () {
     return view('package_card');
 });
+
+Route::get('/packages', function () {
+    return view('packages');
+});

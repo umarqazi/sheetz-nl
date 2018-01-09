@@ -100,6 +100,9 @@
     .events_at_sheetz h1 {
         margin-bottom: 60px;
     }
+    .package_img {
+        height: 200px;
+    }
     .package_desc {
         padding: 30px 15px 0 40px;
     }
@@ -395,7 +398,8 @@
     }
     .about_content,
     .vacancy_content,
-    .package_content {
+    .package_content,
+    .package_main {
         padding-bottom: 0;
         border-bottom: none;
     }
@@ -557,6 +561,18 @@
     .our_hotels_content h1 span::before {
         width: 120%;
     }
+    .tab-pane .packages_wrapper > div {
+        margin-bottom: 30px;
+    }
+    .packages_tabs {
+        margin: 20px auto;
+    }
+    .scroll_tabs {
+        overflow-x: auto;
+    }
+    .nav-tabs > li > a {
+        font-size: 16px;
+    }
 }
 
 @media all and (max-width:480px) {
@@ -572,7 +588,11 @@
         border: none;
         padding: 20px 15px;
     }
-    .responsive3 .slick-track > div {
+    .tab-pane .packages_wrapper > div {
+        width: 100%;
+    }
+    .responsive3 .slick-track > div,
+    .tab-pane .packages_wrapper > div {
         border: 2px solid #424242;
         padding: 0;
     }
