@@ -399,7 +399,8 @@
     .about_content,
     .vacancy_content,
     .package_content,
-    .package_main {
+    .package_main,
+    .wellness {
         padding-bottom: 0;
         border-bottom: none;
     }
@@ -464,6 +465,12 @@
     .gallery_slider .slider_img {
         height: 200px;
     }
+    .common_gallery h1 {
+        font-size: 30px;
+    }
+    .common_gallery h1::after {
+        bottom: 12px;
+    }
     .social_links {
         margin-bottom: 10px;
     }
@@ -509,6 +516,7 @@
     .our_hotels_content .main_slider .slider_wrapper {
         width: 100%;
         padding: 0 10px;
+        margin: 0 auto;
     }
     .our_hotels_content {
         padding: 30px 0 0;
@@ -528,7 +536,8 @@
     .vacnacy_details > span {
         margin: 0 0 20px;
     }
-    .package_availability {
+    .package_availability,
+    .wellness + .package_availability {
         padding: 40px 15px 0;
     }
     .package_availability > ul {
@@ -610,9 +619,15 @@
     .event_slider .package_desc {
         text-align: center;
     }
+    /*
     .gallery_slider .slider_img {
         height: 240px;
     }
+*/
+    .gallery_slider .slider_img {
+        height: auto;
+    }
+
     .common_gallery h1 {
         font-size: 26px;
     }
