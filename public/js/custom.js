@@ -164,7 +164,17 @@ $(document).ready(function () {
     });
 
 
+    // wellness slider
 
+    $('.single_item').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        infinite: true,
+        speed: 300
+    });
 
     // common gallery
 
