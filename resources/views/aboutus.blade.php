@@ -8,9 +8,6 @@
 
             <p>We take pride in service with great<span class="white_txt"><em>attention</em></span>to detail</p>
 
-            <p>We take pride in service with great<span class="white_txt">attention</span>to detail</p>
-
-
         </div>
     </div>
 </div>
