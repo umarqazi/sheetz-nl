@@ -708,4 +708,11 @@
     .common_gallery h1::after {
         bottom: 25px;
     }
+
+    .tab-pane .packages_wrapper > div {
+        width: 100%;
+        float: none;
+        clear: both;
+        padding: 0;
+    }
 }
