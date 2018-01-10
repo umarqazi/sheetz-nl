@@ -33,6 +33,9 @@
     .main_nav .main_custom_nav > li > a {
         padding: 17px;
     }
+    .navbar-brand {
+        margin-right: 40px;
+    }
     .book_now a:first-child {
         width: 155px;
     }
@@ -91,6 +94,9 @@
     .packages {
         margin: 40px auto;
     }
+    .what_client_say {
+        margin-bottom: 0;
+    }
     .responsive1 .events_wrapper {
         margin-bottom: 60px;
         width: calc(100% - 150px) !important;
@@ -102,6 +108,9 @@
     }
     .events_at_sheetz h1 {
         margin-bottom: 60px;
+    }
+    .package_img {
+        height: 200px;
     }
     .package_desc {
         padding: 30px 15px 0 40px;
@@ -155,6 +164,9 @@
     }
     .wellness .vouchars_wrapper > div {
         padding: 0 15px;
+    }
+    .our_hotels_content .main_slider .slider_wrapper {
+        width: 50%;
     }
 
 }
@@ -374,6 +386,7 @@
     .vouchars_wrapper .vouchar_img {
         min-height: 175px;
     }
+
     .terms_conditions {
         padding: 40px 15px;
     }
@@ -389,6 +402,11 @@
     }
     .single_item {
         padding: 30px 0 0;
+    }
+
+    .have_you_received,
+    .terms_conditions {
+        padding: 40px 15px;
     }
 
 }
@@ -438,6 +456,15 @@
     .main_slider {
         padding-bottom: 30px;
         border-bottom: 1px solid #e7e7e7;
+    }
+    .about_content,
+    .vacancy_content,
+    .package_content,
+    .package_main,
+    .wellness,
+    .gifts {
+        padding-bottom: 0;
+        border-bottom: none;
     }
     .hotel_filter {
         padding: 10px;
@@ -499,6 +526,12 @@
     }
     .gallery_slider .slider_img {
         height: 200px;
+    }
+    .common_gallery h1 {
+        font-size: 30px;
+    }
+    .common_gallery h1::after {
+        bottom: 12px;
     }
     .social_links {
         margin-bottom: 10px;
@@ -597,6 +630,11 @@
     .our_hotels_content h1 {
         font-size: 24px;
     }
+
+    .our_hotels_content h1 span::before {
+        width: 120%;
+    }
+
     .tab-pane .packages_wrapper > div {
         margin-bottom: 30px;
     }
@@ -630,6 +668,7 @@
     .vouchars_wrapper {
         padding: 40px 0 0;
     }
+
     .single_item .slide_wrapper > div {
         display: block;
         float: none !important;
@@ -675,7 +714,11 @@
         border: none;
         padding: 20px 15px;
     }
-    .responsive3 .slick-track > div {
+    .tab-pane .packages_wrapper > div {
+        width: 100%;
+    }
+    .responsive3 .slick-track > div,
+    .tab-pane .packages_wrapper > div {
         border: 2px solid #424242;
         padding: 0;
     }
@@ -693,9 +736,15 @@
     .event_slider .package_desc {
         text-align: center;
     }
+    /*
     .gallery_slider .slider_img {
         height: 240px;
     }
+*/
+    .gallery_slider .slider_img {
+        height: auto;
+    }
+
     .common_gallery h1 {
         font-size: 26px;
     }
@@ -714,5 +763,23 @@
         float: none;
         clear: both;
         padding: 0;
+    }
+    .ceo_img {
+        position: relative;
+    }
+    .ceo_txt {
+        width: 100%;
+        padding: 10px 0;
+        margin-left: 0;
+    }
+    .vacnacy_list ul li {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .vouchars_wrapper > div {
+        width: auto;
+        padding: 10px;
+        margin: 0 0 20px;
     }
 }

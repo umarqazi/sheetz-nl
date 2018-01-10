@@ -28,6 +28,7 @@ body {
 }
 
 
+
 a {
     color: #424242 !important;
 }
@@ -90,6 +91,12 @@ li {
 
 .free-wall {
     margin: 45px 0 20px;
+}
+
+.brick {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .brick img {
@@ -177,6 +184,7 @@ textarea .form-control {
     color: inherit !important;
 }
 
+
 .slick-prev,
 .slick-next {
     width: 64px;
@@ -205,6 +213,10 @@ textarea .form-control {
 /* custom bootstrap ends here */
 
 /** top header **/
+
+header .main_nav {
+    border-bottom: 2px solid #424242;
+}
 
 .gold {
     color: #ba9e76;
@@ -274,7 +286,7 @@ textarea .form-control {
 .main_nav .main_custom_nav > li > a {
     display: block;
     font-weight: 500;
-    padding: 17px 34px;
+    padding: 17px 30px;
 }
 
 .main_nav .myreservations a,
@@ -340,8 +352,8 @@ textarea .form-control {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url(../images/home_banner.jpg) no-repeat center center;
-    background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url(../images/home_banner.jpg) no-repeat center center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url(../images/home_banner.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url(../images/home_banner.jpg) no-repeat center center/cover;
 }
 
 .hotel_description h1 {
@@ -599,7 +611,7 @@ textarea .form-control {
     font-family: inherit;
 }
 
-.packages > h1 {
+.packages h1 {
     font-size: 48px;
     margin-bottom: 50px;
     font-family: 'PT Serif', serif;
@@ -629,6 +641,7 @@ textarea .form-control {
 
 .package_desc p:last-of-type {
     margin-bottom: 0;
+    font-size: 14px;
 }
 
 .featured_package .package_desc > span:last-of-type {
@@ -642,10 +655,11 @@ textarea .form-control {
 
 .package_img img {
     height: 100%;
-    width: 100%;
+    max-width: 100%;
 }
 
-.package_desc > a {
+.package_desc > a,
+.release_content > .readmore {
     display: block;
     width: 180px;
     margin: 40px auto 0 0;
@@ -665,7 +679,10 @@ textarea .form-control {
 
 .package_desc > a:hover,
 .package_desc > a:focus,
-.package_desc > a:active {
+.package_desc > a:active,
+.release_content > .readmore:hover,
+.release_content > .readmore:focus,
+.release_content > .readmore:active {
     color: #000 !important;
     background-color: #fff;
     border-color: #000;
@@ -675,7 +692,7 @@ textarea .form-control {
 
 .packages_wrapper {
     margin: 60px auto;
-    padding: 0 20px;
+    padding: 0 25px;
 }
 
 .packages_wrapper .package_desc {
@@ -1073,7 +1090,6 @@ footer h4 {
     opacity: .6;
 }
 
-
 /* about page styles goes from here */
 
 .about_content .main_banner {
@@ -1087,6 +1103,9 @@ footer h4 {
     color: #424242;
     margin: 0 10px;
     background-color: #fff;
+
+    font-style: italic;
+
     font-family: 'PT Serif', serif;
     font-weight: 600;
 }
@@ -1253,6 +1272,7 @@ footer h4 {
 .our_hotels_content h1 {
     margin-bottom: 50px;
     text-transform: uppercase;
+
     padding: 0 15px;
 }
 
@@ -1448,20 +1468,33 @@ footer h4 {
     margin: 0 auto;
 }
 
+
 .our_hotels_content h1 span,
 .wellness_sheetz h1 span {
+
+.our_hotels_content h1 span {
+
     position: relative;
     letter-spacing: 3px;
 }
 
+
 .our_hotels_content h1 span::before,
 .wellness_sheetz h1 span:before {
+
+.our_hotels_content h1 span::before {
+
     content: "";
     position: absolute;
     bottom: -3px;
     height: 4px;
+
     width: 100%;
     background-color: #ba9e76;
+
+    width: 115%;
+    background-color: #ba9e76;
+    right: -24px;
     margin: 0 auto;
 }
 
@@ -1513,6 +1546,7 @@ footer h4 {
     float: none;
 }
 
+
 /* wellness styles goes from here */
 
 .wellness .main_banner {
@@ -1545,6 +1579,9 @@ footer h4 {
     margin-bottom: 0;
 }
 
+/* wellness packages styles goes from here */
+
+
 .wellness_package .main_banner {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url(../images/wellness_banner.jpg) no-repeat center center/cover;
     background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url(../images/wellness_banner.jpg) no-repeat center center/cover;
@@ -1553,6 +1590,7 @@ footer h4 {
 .wellness + .package_availability {
     padding: 60px 15px 30px;
 }
+
 
 .wellness .vouchars_wrapper {
     padding: 0;
@@ -1686,7 +1724,11 @@ footer h4 {
 
 .vouchars_wrapper .vouchar_img img {
     height: 100%;
+
     width: 100%;
+
+    max-width: 100%;
+
 }
 
 .vouchar_txt {
@@ -1700,6 +1742,7 @@ footer h4 {
 .vouchar_txt .view_all {
     margin: 30px auto 10px;
 }
+
 
 .vouchar_txt a.readmore {
     margin: 30px auto 0;
@@ -1716,4 +1759,3 @@ footer h4 {
     text-align: center;
 }
 
-> > > > > > > Stashed changes
