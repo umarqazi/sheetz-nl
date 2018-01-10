@@ -655,7 +655,7 @@ header .main_nav {
 
 .package_img img {
     height: 100%;
-    max-width: 100%;
+    width: 100%;
 }
 
 .package_desc > a,
@@ -1471,9 +1471,6 @@ footer h4 {
 
 .our_hotels_content h1 span,
 .wellness_sheetz h1 span {
-
-.our_hotels_content h1 span {
-
     position: relative;
     letter-spacing: 3px;
 }
@@ -1481,18 +1478,11 @@ footer h4 {
 
 .our_hotels_content h1 span::before,
 .wellness_sheetz h1 span:before {
-
-.our_hotels_content h1 span::before {
-
     content: "";
     position: absolute;
     bottom: -3px;
     height: 4px;
-
     width: 100%;
-    background-color: #ba9e76;
-
-    width: 115%;
     background-color: #ba9e76;
     right: -24px;
     margin: 0 auto;
@@ -1536,9 +1526,8 @@ footer h4 {
 }
 
 .tab-pane .packages_wrapper {
-    font-size: 0;
+	font-size: 0;
 }
-
 .tab-pane .packages_wrapper > div {
     margin-bottom: 50px;
     display: inline-block;
@@ -1580,7 +1569,6 @@ footer h4 {
 }
 
 /* wellness packages styles goes from here */
-
 
 .wellness_package .main_banner {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url(../images/wellness_banner.jpg) no-repeat center center/cover;
@@ -1685,6 +1673,7 @@ footer h4 {
 
 .gift_wrapper h1 {
     margin-bottom: 10px;
+    padding: 0 15px;
 }
 
 .gift_wrapper > p {
@@ -1692,6 +1681,7 @@ footer h4 {
     background-color: #ba9e76;
     display: inline-block;
     padding: 3px 20px;
+    margin: 0 15px;
 }
 
 .have_you_received {
@@ -1724,11 +1714,7 @@ footer h4 {
 
 .vouchars_wrapper .vouchar_img img {
     height: 100%;
-
     width: 100%;
-
-    max-width: 100%;
-
 }
 
 .vouchar_txt {
@@ -1758,4 +1744,3 @@ footer h4 {
     margin-bottom: 40px;
     text-align: center;
 }
-
