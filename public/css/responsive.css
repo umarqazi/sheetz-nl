@@ -6,6 +6,15 @@
     .main_row {
         margin: 0 -40px;
     }
+    .wellness .vouchars_wrapper > div:first-of-type {
+        float: left;
+    }
+
+    .wellness .vouchars_wrapper > div:last-of-type {
+        float: right;
+    }
+
+
 }
 
 @media all and (min-width:768px) {
@@ -135,9 +144,31 @@
     .copyrights {
         margin-top: 20px;
     }
+
     .our_hotels_content .main_slider .slider_wrapper {
         width: 50%;
     }
+    .slick-prev,
+    .slick-prev:hover {
+        left: 0;
+    }
+    .slick-next,
+    .slick-next:hover {
+        right: 0;
+    }
+    .single_item > div {
+        max-width: 800px;
+    }
+    .have_you_received {
+        padding: 60px 0;
+    }
+    .wellness .vouchars_wrapper > div {
+        padding: 0 15px;
+    }
+    .our_hotels_content .main_slider .slider_wrapper {
+        width: 50%;
+    }
+
 }
 
 @media all and (max-width:991px) {
@@ -327,6 +358,7 @@
     .hotel_description h2 {
         font-size: 36px !important;
     }
+
     .about_txt h3 {
         margin-bottom: 30px;
     }
@@ -354,10 +386,29 @@
     .vouchars_wrapper .vouchar_img {
         min-height: 175px;
     }
+
+    .terms_conditions {
+        padding: 40px 15px;
+    }
+    .have_you_received {
+        padding: 40px 0;
+    }
+    .slick-prev,
+    .slick-next {
+        display: none !important;
+    }
+    .wellness_sheetz {
+        padding: 50px 15px 20px;
+    }
+    .single_item {
+        padding: 30px 0 0;
+    }
+
     .have_you_received,
     .terms_conditions {
         padding: 40px 15px;
     }
+
 }
 
 @media all and (max-width:767px) {
@@ -507,6 +558,7 @@
     .footer_desc {
         text-align: center;
     }
+
     .release_content {
         padding: 20px 15px;
         height: auto;
@@ -578,9 +630,11 @@
     .our_hotels_content h1 {
         font-size: 24px;
     }
+
     .our_hotels_content h1 span::before {
         width: 120%;
     }
+
     .tab-pane .packages_wrapper > div {
         margin-bottom: 30px;
     }
@@ -614,6 +668,37 @@
     .vouchars_wrapper {
         padding: 40px 0 0;
     }
+
+    .single_item .slide_wrapper > div {
+        display: block;
+        float: none !important;
+        clear: both;
+        max-width: 100% !important;
+        width: 100%;
+        margin: 0 auto 30px;
+    }
+    .single_item .slide_wrapper > div.package_price .from {
+        font-size: 30px;
+    }
+    .single_item .slide_wrapper > div.package_price,
+    .single_item .slide_wrapper > div.package_price .from {
+        text-align: center;
+    }
+    .single_item .slide_wrapper {
+        padding: 15px;
+    }
+    .wellness .vouchars_wrapper > div {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .wellness_sheetz {
+        padding: 30px 15px 20px;
+    }
+    .wellness_packages {
+        padding: 30px 0 0;
+    }
+
 }
 
 @media all and (max-width:480px) {

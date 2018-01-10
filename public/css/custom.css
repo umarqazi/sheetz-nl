@@ -185,6 +185,31 @@ textarea .form-control {
 }
 
 
+.slick-prev,
+.slick-next {
+    width: 64px;
+    height: 64px;
+    z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: none;
+}
+
+.slick-prev,
+.slick-prev:hover {
+    background: url(../images/btn1.png) no-repeat center center;
+    left: 7%;
+}
+
+.slick-next,
+.slick-next:hover {
+    background: url(../images/btn2.png) no-repeat center center;
+    right: 7%;
+}
+
+
 /* custom bootstrap ends here */
 
 /** top header **/
@@ -269,7 +294,8 @@ header .main_nav {
 .view_all,
 .package_desc_inline > div .readmore,
 .btn_custom,
-.join_content a {
+.join_content a,
+.single_item .slide_wrapper > div.package_price a {
     font-size: 12px;
     font-weight: 500;
     padding: 0 25px !important;
@@ -1077,7 +1103,9 @@ footer h4 {
     color: #424242;
     margin: 0 10px;
     background-color: #fff;
+
     font-style: italic;
+
     font-family: 'PT Serif', serif;
     font-weight: 600;
 }
@@ -1244,6 +1272,8 @@ footer h4 {
 .our_hotels_content h1 {
     margin-bottom: 50px;
     text-transform: uppercase;
+
+    padding: 0 15px;
 }
 
 .our_hotels_content .view_all {
@@ -1438,16 +1468,30 @@ footer h4 {
     margin: 0 auto;
 }
 
+
+.our_hotels_content h1 span,
+.wellness_sheetz h1 span {
+
 .our_hotels_content h1 span {
+
     position: relative;
     letter-spacing: 3px;
 }
 
+
+.our_hotels_content h1 span::before,
+.wellness_sheetz h1 span:before {
+
 .our_hotels_content h1 span::before {
+
     content: "";
     position: absolute;
     bottom: -3px;
     height: 4px;
+
+    width: 100%;
+    background-color: #ba9e76;
+
     width: 115%;
     background-color: #ba9e76;
     right: -24px;
@@ -1502,7 +1546,41 @@ footer h4 {
     float: none;
 }
 
+
+/* wellness styles goes from here */
+
+.wellness .main_banner {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url(../images/wedding_banner.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url(../images/wedding_banner.jpg) no-repeat center center/cover;
+}
+
+.wellness_sheetz {
+    padding: 50px 15px;
+    overflow: hidden;
+}
+
+.wellness_sheetz h1 {
+    margin-bottom: 50px;
+}
+
+.wellness_sheetz .intro {
+    max-width: 750px;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+    border: none;
+}
+
+.wellness_sheetz .intro p {
+    margin-bottom: 30px;
+}
+
+.wellness_sheetz .intro p:last-of-type {
+    margin-bottom: 0;
+}
+
 /* wellness packages styles goes from here */
+
 
 .wellness_package .main_banner {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url(../images/wellness_banner.jpg) no-repeat center center/cover;
@@ -1511,6 +1589,87 @@ footer h4 {
 
 .wellness + .package_availability {
     padding: 60px 15px 30px;
+}
+
+
+.wellness .vouchars_wrapper {
+    padding: 0;
+}
+
+.wellness .vouchars_wrapper > div {
+    border: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.wellness .vouchar_txt {
+    padding: 25px 0 0;
+}
+
+.wellness_packages {
+    padding: 50px 0 0;
+}
+
+.wellness_packages h2 {
+    display: inline-block;
+    margin-bottom: 30px;
+    background-color: #000;
+    color: #ba9e76;
+    padding: 10px 30px;
+}
+
+.single_item {
+    padding: 30px 0;
+}
+
+.single_item > div {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.single_item .slide_wrapper {
+    border: 4px solid #d1d1d1;
+    padding: 25px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.single_item .slide_wrapper > div {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.single_item .slide_wrapper > div.slider_img {
+    max-width: 210px;
+}
+
+.single_item .slide_wrapper > div.slider_img img {
+    display: block;
+    margin: 0 auto;
+}
+
+.single_item .slide_wrapper > div.package_price {
+    float: right;
+    margin-right: 0;
+}
+
+.single_item .slide_wrapper > div.package_price .from {
+    text-align: right;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.single_item .slide_wrapper > div.package_price span {
+    color: #bbb;
+    display: block;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.single_item .slide_wrapper > div.package_price a {
+    width: 180px;
+    text-align: center;
 }
 
 /* gifts page styles */
@@ -1565,7 +1724,11 @@ footer h4 {
 
 .vouchars_wrapper .vouchar_img img {
     height: 100%;
+
+    width: 100%;
+
     max-width: 100%;
+
 }
 
 .vouchar_txt {
@@ -1580,6 +1743,11 @@ footer h4 {
     margin: 30px auto 10px;
 }
 
+
+.vouchar_txt a.readmore {
+    margin: 30px auto 0;
+}
+
 .terms_conditions {
     padding: 60px 15px;
     max-width: 720px;
@@ -1590,3 +1758,4 @@ footer h4 {
     margin-bottom: 40px;
     text-align: center;
 }
+

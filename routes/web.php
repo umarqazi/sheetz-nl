@@ -39,6 +39,10 @@ Route::get('/packages', function () {
     return view('packages');
 });
 
+Route::get('/wellness', function () {
+    return view('wellness');
+});
+
 Route::get('/wellness_card', function () {
     return view('wellness_card');
 });

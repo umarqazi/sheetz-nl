@@ -93,6 +93,9 @@
 
     </div>
 </div>
+
+@include('includes/vouchar_received')
+
 <div class="have_you_received">
     <div class="received_content text-center">
         <h2><em>Have you recieved a gift voucher?</em></h2>
@@ -117,6 +120,7 @@
         </div>
     </div>
 </div>
+
 <div class="terms_conditions">
     <h3>TERMS AND CONDITIONS</h3>
     <ul>
