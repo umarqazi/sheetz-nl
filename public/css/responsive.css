@@ -55,7 +55,7 @@
     }
     .packages_wrapper {
         margin: 40px auto;
-        padding: 0 15px;
+        padding: 0;
     }
 }
 
@@ -90,6 +90,7 @@
     }
     .packages {
         margin: 40px auto;
+        padding: 0 15px;
     }
     .what_client_say {
         margin-bottom: 0;
@@ -500,14 +501,14 @@
         height: 170px;
     }
     .events_at_sheetz {
-        padding: 0 15px 50px;
+        padding: 0 0 30px;
     }
     .events_at_sheetz h1 span {
         padding: 10px;
         font-size: 30px;
     }
     .event_slider .events_wrapper {
-        padding: 0 7.5px;
+        padding: 0 15px;
     }
     .event_slider .package_img {
         height: 180px;
@@ -636,6 +637,7 @@
     .tab-pane .packages_wrapper > div {
         margin-bottom: 30px;
     }
+
     .packages_tabs {
         margin: 20px auto;
     }
@@ -715,7 +717,12 @@
     .what_client_say .packages_wrapper {
         margin: 30px auto 20px;
     }
-
+    .gift_wrapper {
+        padding: 40px 0 20px;
+    }
+    .gift_wrapper .packages_wrapper {
+        margin: 40px auto 0;
+    }
 }
 
 @media all and (max-width:480px) {
@@ -753,6 +760,9 @@
     .event_slider .package_desc {
         text-align: center;
     }
+    .tab-pane .packages_wrapper {
+        padding: 0 15px;
+    }
     /*
     .gallery_slider .slider_img {
         height: 240px;
@@ -773,6 +783,13 @@
     }
     .common_gallery h1::after {
         bottom: 25px;
+    }
+
+    .tab-pane .packages_wrapper > div {
+        width: 100%;
+        float: none;
+        clear: both;
+        padding: 0;
     }
     .ceo_img {
         position: relative;

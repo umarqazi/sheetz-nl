@@ -1549,9 +1549,8 @@ footer h4 {
 }
 
 .tab-pane .packages_wrapper {
-    font-size: 0;
+	font-size: 0;
 }
-
 .tab-pane .packages_wrapper > div {
     margin-bottom: 50px;
     display: inline-block;
@@ -1697,6 +1696,7 @@ footer h4 {
 
 .gift_wrapper h1 {
     margin-bottom: 10px;
+    padding: 0 15px;
 }
 
 .gift_wrapper > p {
@@ -1704,6 +1704,7 @@ footer h4 {
     background-color: #ba9e76;
     display: inline-block;
     padding: 3px 20px;
+    margin: 0 15px;
 }
 
 .have_you_received {
@@ -1736,11 +1737,7 @@ footer h4 {
 
 .vouchars_wrapper .vouchar_img img {
     height: 100%;
-
     width: 100%;
-
-    max-width: 100%;
-
 }
 
 .vouchar_txt {
@@ -1770,6 +1767,7 @@ footer h4 {
     margin-bottom: 40px;
     text-align: center;
 }
+
 
 /* meetings page styles */
 
@@ -1892,3 +1890,4 @@ footer h4 {
     display: inline-block;
     vertical-align: top;
 }
+
