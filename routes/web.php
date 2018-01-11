@@ -50,3 +50,7 @@ Route::get('/wellness_card', function () {
 Route::get('/gifts', function () {
     return view('gifts');
 });
+
+Route::get('/meetings', function () {
+    return view('meetings');
+});

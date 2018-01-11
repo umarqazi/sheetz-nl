@@ -78,7 +78,7 @@ $(document).ready(function () {
 
     // first main slider on home page
 
-    $('.responsive').slick({
+    $('.responsive,.inspirational_slider').slick({
         dots: true,
         infinite: true,
         speed: 300,

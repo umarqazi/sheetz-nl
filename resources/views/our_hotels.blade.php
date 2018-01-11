@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="our_hotels_content text-center">
-    <h3><span>Sheetz</span></h3>
+    <h3><em>Sheetz</em></h3>
     <h1>HOTELS</h1>
     @include('includes/hotel_divs')
 </div>

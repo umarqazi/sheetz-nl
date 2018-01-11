@@ -5,7 +5,7 @@
     <div class="main_banner">
         <div class="hotel_description text-center">
             <h1>SHEETZ SPECIAL</h1>
-            <p>Stay for 1, 2 or 3 nights, including breakfast and a culinary three-course dinner in one of our 17 hotels <br>in the Netherlands.</p>
+            <p>Stay for 1, 2 or 3 nights, including breakfast and a culinary three-course dinner in one of our 17 hotels <span class="black">in the Netherlands.</span></p>
 
         </div>
     </div>
