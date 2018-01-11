@@ -54,3 +54,7 @@ Route::get('/gifts', function () {
 Route::get('/meetings', function () {
     return view('meetings');
 });
+
+Route::get('/weddings', function () {
+    return view('weddings');
+});

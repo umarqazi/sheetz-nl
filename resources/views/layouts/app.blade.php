@@ -92,10 +92,10 @@
 
                             <li><a href="#" class="hvr-overline-from-center">HOTELS</a></li>
                             <li><a href="/packages" class="hvr-overline-from-center">PACKAGES</a></li>
-                            <li><a href="#" class="hvr-overline-from-center">MEETINGS</a></li>
+                            <li><a href="/meetings" class="hvr-overline-from-center">MEETINGS</a></li>
                             <li><a href="#" class="hvr-overline-from-center">EVENTS</a></li>
                             <li><a href="/wellness" class="hvr-overline-from-center">WELLNESS</a></li>
-                            <li><a href="#" class="hvr-overline-from-center">WEDDINGS</a></li>
+                            <li><a href="/weddings" class="hvr-overline-from-center">WEDDINGS</a></li>
 
                         </ul>
 
