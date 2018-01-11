@@ -131,12 +131,14 @@
         </div>
     </div>
 </div>
-<div class="common_gallery container-fluid text-center">
+<div class="common_gallery text-center">
     <h1 class="text-uppercase">
         <p>Discover more about <span class="gold">#Sheetz</span></p>
     </h1>
     <span>from our customers and members</span>
-    <div id="freewall" class="free-wall hidden-xs"></div>
+    <div class="container-fluid">
+        <div id="freewall" class="free-wall hidden-xs"></div>
+    </div>
 </div>
 @include('includes/gallery_slider')
 <div class="social_links text-center">
