@@ -7,10 +7,6 @@
             <h1>ABOUT US</h1>
 
             <p>We take pride in service with great<span class="white_txt"><em>attention</em></span>to detail</p>
-
-            <p>We take pride in service with great<span class="white_txt">attention</span>to detail</p>
-
-
         </div>
     </div>
 </div>
@@ -39,7 +35,7 @@
         <div class="col-sm-4 col-xs-12">
             <div class="release_content text-center">
                 <h3><em>contact</em></h3>
-                <p>Sheetz Head Office</p>
+                <h5>Sheetz Head Office</h5>
                 <span>Beukenlaan 52 | 6871 CL Renkum</span>
                 <span>Telephone: +31 (0)317 - 318 319</span>
                 <a href="mailto:info@sheetz.nl">info@sheetz.nl</a>
@@ -48,7 +44,7 @@
         <div class="col-sm-4 col-xs-12">
             <div class="release_content text-center">
                 <h3><em>Press</em></h3>
-                <p>For press information, please contact:</p>
+                <h5>For press information, please contact:</h5>
                 <span>Arlette Gilbert</span>
                 <span>Commercial Director</span>
                 <a href="mailto:ceo@sheetz.nl">ceo@sheetz.nl</a>
@@ -57,7 +53,7 @@
         <div class="col-sm-4 col-xs-12">
             <div class="release_content text-center">
                 <h3><em>News</em></h3>
-                <p>Sheetz hotels finalised</p>
+                <h5>Sheetz hotels finalised</h5>
                 <span>QMH Limited (‘QMH’)</span>
                 <span>announced today sale for...</span>
                 <a href="#" class="readmore">read more</a>

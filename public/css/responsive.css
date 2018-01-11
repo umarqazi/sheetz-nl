@@ -18,10 +18,7 @@
 }
 
 @media all and (min-width:768px) {
-    .responsive .slick-dots,
-    .responsive1 .slick-dots,
-    .responsive2 .slick-dots,
-    .responsive3 .slick-dots {
+    .slick-dots {
         display: none !important;
     }
     .navbar-right {
@@ -408,7 +405,12 @@
     .terms_conditions {
         padding: 40px 15px;
     }
-
+    .inspirational_slider {
+        padding: 30px 15px;
+    }
+    .clearfix.need_wrapper {
+        padding: 30px 0;
+    }
 }
 
 @media all and (max-width:767px) {
@@ -452,19 +454,14 @@
     .main_banner {
         height: 420px;
     }
-    .intro,
-    .main_slider {
-        padding-bottom: 30px;
-        border-bottom: 1px solid #e7e7e7;
-    }
-    .about_content,
-    .vacancy_content,
-    .package_content,
-    .package_main,
-    .wellness,
-    .gifts {
+
+    .intro {
         padding-bottom: 0;
         border-bottom: none;
+    }
+    .home_content {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #e7e7e7;
     }
     .hotel_filter {
         padding: 10px;
@@ -563,6 +560,7 @@
         padding: 20px 15px;
         height: auto;
         margin-bottom: 20px;
+        min-height: 100%;
     }
     .what_client_say {
         margin-top: 20px;
@@ -698,6 +696,25 @@
     .wellness_packages {
         padding: 30px 0 0;
     }
+    .need_wrapper > div {
+        margin-bottom: 20px;
+    }
+    .meetings_contact {
+        margin: 30px auto;
+    }
+    .meetings_content {
+        padding: 30px 15px 40px;
+    }
+    .fix_you_need {
+        margin-top: 0;
+    }
+    .inspirational h2 {
+        top: 0;
+        font-size: 30px;
+    }
+    .what_client_say .packages_wrapper {
+        margin: 30px auto 20px;
+    }
 
 }
 
@@ -774,5 +791,12 @@
         width: auto;
         padding: 10px;
         margin: 0 0 20px;
+    }
+    .fix_you_need h1 {
+        font-size: 40px;
+    }
+    .packages h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
     }
 }
