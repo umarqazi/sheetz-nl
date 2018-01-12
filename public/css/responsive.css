@@ -166,6 +166,12 @@
     .our_hotels_content .main_slider .slider_wrapper {
         width: 50%;
     }
+    .amazing_day .slider_img {
+        height: 300px;
+    }
+    .amazing_day {
+        padding: 30px 0 10px;
+    }
 
 }
 
@@ -212,18 +218,26 @@
     .main_nav .collapse {
         display: none !important;
         float: none;
+        clear: both;
+        border-color: transparent;
     }
     .main_nav .collapse.in {
         display: block !important;
         overflow-y: auto !important;
         padding: 0;
+        border-color: transparent;
+    }
+    .main_nav .navbar-collapse {
+        border: none;
     }
     .main_nav .collapsing {
         padding: 0 !important;
+        border-color: transparent;
     }
     .main_custom_nav {
         float: none;
         margin: 0;
+        padding: 15px 0 0;
     }
     .main_custom_nav li {
         float: none;
@@ -241,6 +255,7 @@
     .main_nav {
         padding: 15px 0;
         background-color: rgba(255, 255, 255, .9);
+        position: fixed;
     }
     .hotel_filter {
         padding: 10px;
@@ -296,8 +311,8 @@
     .package_desc_inline > div .readmore,
     .btn_custom,
     .join_content a {
-        height: 40px;
-        line-height: 38px;
+        height: 45px;
+        line-height: 43px;
     }
     .events_at_sheetz h1 {
         margin-bottom: 40px;
@@ -412,6 +427,21 @@
     .clearfix.need_wrapper {
         padding: 30px 0;
     }
+    .responsive4 .media-body {
+        padding: 50px 20px 20px 20px;
+    }
+    .meetings_content .packages {
+        margin: 0 auto 30px;
+    }
+    .amazing_day .slider_img {
+        height: 220px;
+    }
+    .what_client_say .packages_wrapper {
+        margin: 30px auto 20px;
+    }
+    .wedding_form h2 {
+        font-size: 24px;
+    }
 }
 
 @media all and (max-width:767px) {
@@ -436,14 +466,14 @@
     }
     .slick-dots {
         position: relative;
-        bottom: -15px;
-        padding: 10px;
+        bottom: -5px;
+        padding: 10px 0 0;
     }
     .slick-dots li button::before {
         font-size: 10px;
     }
     .navbar-brand {
-        padding: 10px 15px;
+        padding: 0 15px;
     }
     .main_nav .navbar-toggle {
         margin-right: 5px;
@@ -713,9 +743,10 @@
     .inspirational h2 {
         top: 0;
         font-size: 30px;
+        margin-bottom: 20px;
     }
     .what_client_say .packages_wrapper {
-        margin: 30px auto 20px;
+        margin: 0 auto 20px;
     }
     .gift_wrapper {
         padding: 40px 0 20px;
@@ -723,6 +754,52 @@
     .gift_wrapper .packages_wrapper {
         margin: 40px auto 0;
     }
+    .wedding_form h2 {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    .amazing_day .slider_img {
+        height: auto;
+    }
+    .amazing_day > div {
+        margin-bottom: 20px;
+    }
+    .wedding_locations > p {
+        margin: 30px auto;
+    }
+    .responsive4 .media > div {
+        display: block;
+        padding: 20px 30px !important;
+        width: auto;
+        text-align: center;
+    }
+    .responsive4 .media > div a,
+    .responsive4 .media > div a img {
+        display: block;
+        margin: 0 auto;
+    }
+    .wedding_form_wrapper > div {
+        padding: 0 15px;
+    }
+    .wedding_form_wrapper {
+        padding: 30px 0;
+    }
+    .wedding_form form {
+        padding: 30px 0 10px;
+    }
+    .wedding_form .view_all {
+        margin: 30px auto 0;
+    }
+    .inspirational_slider {
+        padding: 15px;
+    }
+    .wedding_form > span {
+        text-align: center;
+    }
+    .wedding_form .filter_inner > li {
+        width: auto;
+    }
+
 }
 
 @media all and (max-width:480px) {
@@ -743,7 +820,7 @@
     }
     .responsive3 .slick-track > div,
     .tab-pane .packages_wrapper > div {
-        border: 2px solid #424242;
+        border: 3px solid #424242;
         padding: 0;
     }
     .package_desc_inline > div .readmore {
@@ -763,6 +840,19 @@
     .tab-pane .packages_wrapper {
         padding: 0 15px;
     }
+    .responsive3 {
+        padding: 0 15px;
+    }
+    .meetings_packages .packages_wrapper .package_desc {
+        border-bottom: none;
+    }
+    .package_desc ul {
+        text-align: left;
+    }
+    .inspirational_slider a {
+        padding: 0;
+    }
+
     /*
     .gallery_slider .slider_img {
         height: 240px;
@@ -776,15 +866,17 @@
         font-size: 26px;
     }
     .common_gallery h1 > p {
-        padding: 0;
-        width: 250px;
+        padding: 0 30px;
+        width: auto;
         margin: 0 auto;
         line-height: 30px;
     }
     .common_gallery h1::after {
         bottom: 25px;
     }
-
+    .amazing_day h1::after {
+        bottom: 10px;
+    }
     .tab-pane .packages_wrapper > div {
         width: 100%;
         float: none;
@@ -809,11 +901,15 @@
         padding: 10px;
         margin: 0 0 20px;
     }
-    .fix_you_need h1 {
+    .fix_you_need h1,
+    .best_days h1 {
         font-size: 40px;
     }
     .packages h1 {
         font-size: 40px;
         margin-bottom: 30px;
+    }
+    .meetings_packages .readmore {
+        margin-top: 0;
     }
 }
