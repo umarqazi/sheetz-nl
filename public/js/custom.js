@@ -28,7 +28,6 @@ $(document).ready(function () {
             $(".main_nav").removeClass("fixed_menu");
             //$(".sidebar").removeClass("sidebarFixed");
         }
-
     });
 
 
@@ -175,6 +174,28 @@ $(document).ready(function () {
         infinite: true,
         speed: 300
     });
+
+    // weddings slider
+
+    $('.responsive4').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: false,
+        responsive: [
+
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                }
+    }
+  ]
+    });
+
 
     // common gallery
 
