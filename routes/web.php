@@ -58,3 +58,7 @@ Route::get('/meetings', function () {
 Route::get('/weddings', function () {
     return view('weddings');
 });
+
+Route::get('/hotel', function () {
+    return view('hotel');
+});

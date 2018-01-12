@@ -1551,11 +1551,11 @@ footer h4 {
     text-transform: capitalize;
 }
 
-.tab-pane .packages_wrapper {
+.package_description .tab-pane .packages_wrapper {
     font-size: 0;
 }
 
-.tab-pane .packages_wrapper > div {
+.package_description .tab-pane .packages_wrapper > div {
     margin-bottom: 50px;
     display: inline-block;
     vertical-align: top;
@@ -2061,4 +2061,34 @@ footer h4 {
 .best_days h1 {
     font-family: 'PT Serif', serif;
     font-size: 48px;
+}
+
+/* hotel main page styles goes here */
+
+.hotel_banner .main_banner {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url(../images/hotel_banner.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url(../images/hotel_banner.jpg) no-repeat center center/cover;
+}
+
+.hotel_menu {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+.hotel_menu .nav-tabs > li > a {
+    font-size: 14px;
+    color: #bfbfbf;
+    border: none;
+    padding: 15px;
+}
+
+.hotel_menu .nav-tabs > li.active > a,
+.hotel_menu .nav-tabs > li.active > a:hover,
+.hotel_menu .nav-tabs > li.active > a:focus {
+    border: none;
+    border: none;
+    color: #fff !important;
+    background-color: transparent;
+    font-weight: 500;
 }

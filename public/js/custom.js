@@ -84,7 +84,7 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
-        autoplay: false,
+        autoplay: true,
         responsive: [
             {
                 breakpoint: 1199,
@@ -106,6 +106,7 @@ $(document).ready(function () {
     }
   ]
     });
+
 
     $('.event_slider').slick({
         dots: true,
@@ -163,6 +164,7 @@ $(document).ready(function () {
     });
 
 
+
     // wellness slider
 
     $('.single_item').slick({
@@ -195,6 +197,7 @@ $(document).ready(function () {
     }
   ]
     });
+
 
 
     // common gallery
@@ -231,6 +234,12 @@ $(document).ready(function () {
 
     $(".like_img,.img_likes").click(function () {
         $(this).children("i").toggleClass("fa fa-heart-o fa fa-heart");
+    });
+
+    // on load Tab
+
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        $('.slick-slider').slick('setPosition');
     });
 
 }); // document ready ends here
