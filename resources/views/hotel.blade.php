@@ -28,6 +28,22 @@
     </div>
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active" id="OVERVIEW">
+            <div class="container-fluid">
+                <div class="client_review">
+                    <div class="about_ceo">
+                        <div class="ceo_message clearfix">
+                            <div class="ceo_img"><img src="images/logo1.png"></div>
+                            <div class="ceo_txt">
+                                <em>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"</em>
+                                <h5>Maurice Lacroix</h5>
+                                <span>International Fashion Company</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="restaurant_wrapper">
                 <div class="container-fluid">
                     <div class="row">
@@ -35,8 +51,8 @@
                             <img src="images/img7.jpg">
                         </div>
                         <div class="col-sm-6 col-xs-12">
-                            <span>RESTAURANT</span>
-                            <h1><em>Wanderloo</em></h1>
+                            <span>WELCOME TO</span>
+                            <h1><em>Grand Hotel Ter Duin</em></h1>
                             <address>
                             <p>
 <span class="gold">Address:</span><span>Westersingel 70, 3015 LB Rotterdam</span>
@@ -56,7 +72,7 @@
             </div>
             <div class="inspirational text-center">
                 <div class="container-fluid">
-                    <h2><span class="gold">#</span>INSPIRATIONAL MEETINGS</h2>
+                    <h2><span class="gold">#</span>GRAND HOTEL TER DUIN</h2>
                     <div class="inspirational_slider">
                         <a href="#"><img src="images/HotelPage_07.jpg"></a>
                         <a href="#"><img src="images/HotelPage_09.jpg"></a>

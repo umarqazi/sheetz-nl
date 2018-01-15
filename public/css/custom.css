@@ -1207,6 +1207,10 @@ footer h4 {
     margin-left: 220px;
 }
 
+.ceo_txt h5 {
+    font-weight: 600;
+}
+
 .ceo_txt em {
     line-height: 25px;
     margin-bottom: 40px;
@@ -2332,5 +2336,36 @@ footer h4 {
 
 .our_locations ul li span {
     display: inline-block;
+    padding: 0 0 0 20px;
+}
+
+.client_review {
+    max-width: 1130px;
+    background-color: #f4f4f4;
+    border-bottom: 5px solid #424242;
+    margin-top: 60px;
+}
+
+.client_review .about_ceo {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.client_review .ceo_message {
+    padding: 40px 25px 25px;
+    position: relative;
+    border-bottom: none;
+    margin: 0 auto;
+}
+
+.client_review .ceo_img {
+    width: 220px;
+    position: relative;
+    top: 0;
+}
+
+.client_review .ceo_txt {
     padding: 0 20px;
+    margin-left: 0;
 }
