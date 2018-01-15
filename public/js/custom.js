@@ -240,7 +240,14 @@ $(document).ready(function () {
 
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
         $('.slick-slider').slick('setPosition');
+
+        // on load of the tab
+        wall.fitWidth();
     });
+
+    // wow js
+
+    new WOW().init();
 
 }); // document ready ends here
 

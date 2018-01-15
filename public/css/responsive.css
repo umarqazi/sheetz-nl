@@ -47,13 +47,15 @@
     .main_slider .slider_wrapper {
         margin: 0 10px;
     }
-    .packages_wrapper .package_desc {
+    .packages_wrapper .package_desc,
+    .hotel_meetings_wrapper .package_desc {
         padding: 20px 10px;
     }
     .main_slider {
         padding: 0 5px;
     }
-    .packages_wrapper {
+    .packages_wrapper,
+    .hotel_meetings_wrapper {
         margin: 40px auto;
         padding: 0;
     }
@@ -365,7 +367,8 @@
     .gallery_slider {
         padding: 30px 15px 20px;
     }
-    .packages_wrapper .package_desc {
+    .packages_wrapper .package_desc,
+    .hotel_meetings_wrapper .package_desc {
         padding: 20px 0;
     }
     .hotel_description h2 {
@@ -384,8 +387,8 @@
     .our_hotels_content h1 {
         margin-bottom: 30px;
     }
-    .our_locations {
-        height: 550px;
+    .our_locations iframe {
+        height: 500px;
     }
     .package_availability > ul {
         padding-bottom: 40px;
@@ -442,6 +445,12 @@
     .wedding_form h2 {
         font-size: 24px;
     }
+    .restaurant_wrapper address {
+        margin: 30px 0;
+    }
+    .room_description {
+        max-width: 300px;
+    }
 }
 
 @media all and (max-width:767px) {
@@ -465,9 +474,11 @@
         width: 10px;
     }
     .slick-dots {
-        position: relative;
         bottom: -5px;
         padding: 10px 0 0;
+        left: 0;
+        right: 0;
+        position: relative;
     }
     .slick-dots li button::before {
         font-size: 10px;
@@ -528,7 +539,8 @@
     }
     .main_slider .slider_inner .slider_img,
     .package_img {
-        height: 170px;
+        min-height: 100%;
+        height: auto;
     }
     .events_at_sheetz {
         padding: 0 0 30px;
@@ -602,9 +614,6 @@
     .about_txt p {
         text-align: left;
     }
-    .our_locations {
-        height: 500px;
-    }
     .our_hotels_content .main_slider .slider_wrapper {
         width: 100%;
         padding: 0 10px;
@@ -670,9 +679,13 @@
 
     .packages_tabs {
         margin: 20px auto;
+        padding: 0;
     }
-    .scroll_tabs {
-        overflow-x: auto;
+    .hotel_menu {
+        margin: 0 auto;
+    }
+    .package_desc ul {
+        margin: 20px 0 0;
     }
     .nav-tabs > li > a {
         font-size: 16px;
@@ -799,14 +812,52 @@
     .wedding_form .filter_inner > li {
         width: auto;
     }
-
+    .restaurant_wrapper {
+        padding-top: 30px;
+    }
+    .restaurant_wrapper .row > div {
+        margin-bottom: 20px;
+    }
+    #RESTAURANT .general_txt {
+        padding: 15px;
+    }
+    #RESTAURANT .press_release {
+        padding-top: 20px;
+    }
+    .restaurant_wrapper .row > div > p {
+        margin-bottom: 20px;
+    }
+    .hotel_menu .nav-tabs > li {
+        padding: 0 5px;
+    }
+    .room_wrapper {
+        padding: 40px 15px;
+    }
+    .room_content > div {
+        float: none !important;
+        clear: both;
+        width: 100%;
+        text-align: left;
+    }
+    .room_content .pull-left > div {
+        margin: 0 15px 0 0;
+    }
+    .room_content .package_price a {
+        margin: 15px auto 10px 0;
+    }
+    .room_content {
+        border-bottom: 2px solid #424242;
+        padding-bottom: 10px;
+    }
+    .room_features li {
+        padding: 10px 10px 10px 0;
+    }
+    .room_content .package_price > p {
+        font-size: 20px;
+    }
 }
 
 @media all and (max-width:480px) {
-    .main_slider .slider_inner .slider_img,
-    .package_img {
-        height: auto;
-    }
     .responsive .slider_txt > p:first-of-type {
         display: none;
     }
@@ -840,10 +891,8 @@
     .tab-pane .packages_wrapper {
         padding: 0 15px;
     }
-    .responsive3 {
-        padding: 0 15px;
-    }
-    .meetings_packages .packages_wrapper .package_desc {
+    .meetings_packages .packages_wrapper .package_desc,
+    .hotel_meetings_wrapper .package_desc {
         border-bottom: none;
     }
     .package_desc ul {
@@ -852,7 +901,17 @@
     .inspirational_slider a {
         padding: 0;
     }
-
+    .responsive3 {
+        border: none !important;
+    }
+    .what_client_say .responsive3 .slick-track > div,
+    #RESTAURANT .packages_wrapper > div {
+        border: none;
+        padding: 0;
+    }
+    #RESTAURANT .packages_wrapper {
+        padding: 0;
+    }
     /*
     .gallery_slider .slider_img {
         height: 240px;
@@ -911,5 +970,14 @@
     }
     .meetings_packages .readmore {
         margin-top: 0;
+    }
+    .room_content .pull-left > div {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 20px;
+    }
+    .room_content .pull-left > div.package_include {
+        width: 100%;
     }
 }
