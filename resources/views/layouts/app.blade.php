@@ -91,7 +91,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav main_custom_nav">
 
-                            <li><a href="#" class="hvr-overline-from-center">HOTELS</a></li>
+                            <li><a href="/hotel" class="hvr-overline-from-center">HOTELS</a></li>
                             <li><a href="/packages" class="hvr-overline-from-center">PACKAGES</a></li>
                             <li><a href="/meetings" class="hvr-overline-from-center">MEETINGS</a></li>
                             <li><a href="#" class="hvr-overline-from-center">EVENTS</a></li>

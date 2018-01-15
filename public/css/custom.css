@@ -68,6 +68,10 @@ li {
     color: #ccc;
 }
 
+.scroll_tabs {
+    overflow-x: auto;
+}
+
 /** bootstrap modified **/
 
 .navbar-brand {
@@ -93,7 +97,7 @@ li {
 }
 
 .free-wall {
-    margin: 45px 0 20px;
+    margin: 40px 0;
 }
 
 .brick {
@@ -156,6 +160,13 @@ textarea .form-control {
     padding: 0 10px;
     margin: 0 auto;
 }
+
+/*
+.hotel_content .nav-tabs > li {
+    padding: 0 0;
+}
+
+*/
 
 .nav-tabs > li > a {
     margin-right: 0;
@@ -302,7 +313,8 @@ header .main_nav {
 .package_desc_inline > div .readmore,
 .btn_custom,
 .join_content a,
-.single_item .slide_wrapper > div.package_price a {
+.single_item .slide_wrapper > div.package_price a,
+.room_content > div.package_price a {
     font-size: 12px;
     font-weight: 500;
     padding: 0 25px !important;
@@ -316,6 +328,9 @@ header .main_nav {
 .main_nav .navbar-default .myreservations > li > a:hover,
 .main_nav .navbar-default .myreservations > li > a:focus,
 .main_nav .navbar-default .myreservations > li > a:active,
+.room_content > div.package_price a:hover,
+.room_content > div.package_price a:focus,
+.room_content > div.package_price a:active,
 .book_now a:first-child:hover,
 .book_now a:first-child:focus,
 .book_now a:first-child:active,
@@ -585,7 +600,7 @@ header .main_nav {
 
 .slider_txt > p,
 .package_desc p {
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .from {
@@ -728,6 +743,10 @@ header .main_nav {
     padding: 0 25px;
 }
 
+#PACKAGES .packages_wrapper {
+    margin: 0 auto 60px;
+}
+
 .packages_wrapper .package_desc {
     padding: 20px;
     text-align: left;
@@ -747,6 +766,15 @@ header .main_nav {
     width: 100%;
     display: block;
     text-align: center;
+    margin-top: 0;
+    background-color: transparent;
+    color: inherit !important;
+}
+
+.package_desc_inline > div > span {
+    display: block;
+    color: #bbb;
+    font-size: 12px;
 }
 
 .events_at_sheetz {
@@ -1206,8 +1234,9 @@ footer h4 {
 
 .release_content h3 {
     text-transform: capitalize;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-family: 'PT Serif', serif;
+    font-weight: 600;
 }
 
 .release_content h5 {
@@ -1218,7 +1247,7 @@ footer h4 {
 .release_content p,
 .release_content span {
     display: block;
-    padding-bottom: 10px;
+    padding: 10px 0;
     font-family: 'PT Serif', serif;
 }
 
@@ -1235,6 +1264,25 @@ footer h4 {
     border-color: #ba9e76;
 }
 
+.release_content .book_order {
+    color: #424242 !important;
+    display: block;
+    height: auto;
+    line-height: normal;
+    margin-bottom: 30px !important;
+    font-family: 'PT Serif', serif;
+}
+
+.release_content .view_our_menu > a {
+    line-height: normal;
+    height: auto;
+    color: #424242 !important;
+    text-decoration: underline !important;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
 .what_client_say {
     background-color: #f9f9f9;
     padding: 40px 0 0;
@@ -1243,7 +1291,6 @@ footer h4 {
 
 .what_client_say .packages_wrapper {
     margin: 60px auto 20px;
-    padding: 0 15px;
 }
 
 .what_client_say .package_img {
@@ -1303,13 +1350,9 @@ footer h4 {
     float: left;
 }
 
-.our_locations {
-    height: 670px;
-}
-
 .our_locations iframe {
+    height: 670px;
     width: 100%;
-    height: 100%;
 }
 
 /* vacancy page styles */
@@ -1551,15 +1594,19 @@ footer h4 {
     text-transform: capitalize;
 }
 
-.package_description .tab-pane .packages_wrapper {
+.package_description .tab-pane .packages_wrapper > div {
+    margin-bottom: 50px;
+}
+
+.main_packages_wrapper .package_description .tab-pane .packages_wrapper {
     font-size: 0;
 }
 
-.package_description .tab-pane .packages_wrapper > div {
-    margin-bottom: 50px;
+.main_packages_wrapper .package_description .tab-pane .packages_wrapper > div {
     display: inline-block;
     vertical-align: top;
     float: none;
+    clear: both;
 }
 
 
@@ -1685,6 +1732,14 @@ footer h4 {
 .single_item .slide_wrapper > div.package_price a {
     width: 180px;
     text-align: center;
+    color: inherit !important;
+    background-color: transparent;
+}
+
+.single_item .slide_wrapper > div.package_price a:hover,
+.single_item .slide_wrapper > div.package_price a:focus,
+.single_item .slide_wrapper > div.package_price a:active {
+    color: #fff !important;
 }
 
 /* gifts page styles */
@@ -2072,8 +2127,17 @@ footer h4 {
 
 .hotel_menu {
     width: 100%;
+    min-width: 1140px;
     margin: 0 auto;
     background-color: #000;
+}
+
+.hotel_menu .nav-tabs > li {
+    padding: 0 50px 0 10px;
+}
+
+.hotel_menu .nav-tabs > li:last-child {
+    padding-right: 0;
 }
 
 .hotel_menu .nav-tabs > li > a {
@@ -2091,4 +2155,182 @@ footer h4 {
     color: #fff !important;
     background-color: transparent;
     font-weight: 500;
+}
+
+.hotel_content .package_intro {
+    display: none;
+}
+
+.restaurant_wrapper {
+    padding-top: 60px;
+}
+
+.restaurant_wrapper h1 {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-family: 'PT Serif', serif;
+}
+
+.restaurant_wrapper .row > div img {
+    max-width: 100%;
+}
+
+.restaurant_wrapper .row > div > span {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.restaurant_wrapper address {
+    margin: 50px 0;
+}
+
+.restaurant_wrapper .row > div > p {
+    margin-bottom: 30px;
+}
+
+.restaurant_wrapper .row > div > p:last-of-type {
+    margin-bottom: 0;
+}
+
+.restaurant_wrapper address > p {
+    margin-bottom: 10px;
+}
+
+.restaurant_wrapper address span,
+.restaurant_wrapper address a {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+    font-weight: 500;
+    color: inherit;
+    font-family: 'Poppins', sans-serif;
+}
+
+.restaurant_wrapper address span.gold {
+    font-weight: 600;
+}
+
+#RESTAURANT .press_release {
+    padding-top: 60px;
+}
+
+.room_wrapper {
+    text-align: left;
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 60px 15px;
+}
+
+.room_content {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.room_content .slider_img {
+    max-width: 210px;
+}
+
+.room_content .pull-left > div {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.room_content .pull-left > div.slider_img img {
+    display: block;
+    margin: 0 auto;
+}
+
+.room_content .pull-left > div.package_include {
+    width: calc(100% - 255px);
+}
+
+.room_content .package_price {
+    float: right;
+    margin-right: 0;
+}
+
+.room_content .package_price .from {
+    text-align: right;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.room_content .package_price span {
+    display: block;
+}
+
+.room_content .package_price a {
+    width: 180px;
+    text-align: center;
+    color: inherit !important;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.room_content .package_price > p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.room_content .package_price > p .gold {
+    display: inline-block;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.billing_details p {
+    font-size: 12px;
+}
+
+.room_features li {
+    display: inline-block;
+    padding: 15px 20px 15px 0;
+}
+
+.room_features li:before {
+    content: none;
+}
+
+.room_description {
+    max-width: 350px;
+}
+
+.room_description a {
+    display: block;
+    text-decoration: underline;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+}
+
+.our_locations h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.our_locations > span {
+    color: #fff;
+    background-color: #ba9e76;
+    font-family: 'PT Serif', serif;
+    font-size: 24px;
+    padding: 5px 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.our_locations ul li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+}
+
+.our_locations ul li span {
+    display: inline-block;
+    padding: 0 20px;
 }
