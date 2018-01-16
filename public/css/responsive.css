@@ -156,7 +156,8 @@
     .slick-next:hover {
         right: 0;
     }
-    .single_item > div {
+    .single_item > div,
+    .testimonials_slider > div {
         max-width: 800px;
     }
     .have_you_received {
@@ -174,7 +175,28 @@
     .amazing_day {
         padding: 30px 0 10px;
     }
-
+    .grand_hotel_slider {
+        height: 590px;
+    }
+    .grand_hotel_info {
+        padding: 20px;
+        top: 20px;
+    }
+    .grand_hotel_info h2 {
+        margin: 0 auto 10px 0;
+    }
+    .grand_hotel_info ul {
+        margin: 20px 0 0;
+    }
+    .our_locations ul li {
+        padding: 0 10px;
+    }
+    .our_locations ul li span {
+        padding: 0 0 0 10px;
+    }
+    .our_locations ul li a {
+        margin: 20px auto 0;
+    }
 }
 
 @media all and (max-width:991px) {
@@ -312,7 +334,8 @@
     .view_all,
     .package_desc_inline > div .readmore,
     .btn_custom,
-    .join_content a {
+    .join_content a,
+    .readmore {
         height: 45px;
         line-height: 43px;
     }
@@ -450,6 +473,41 @@
     }
     .room_description {
         max-width: 300px;
+    }
+    .main_calender {
+        width: 310px;
+        padding: 23px 15px;
+    }
+    .client_review {
+        margin-top: 40px;
+    }
+    .restaurant_wrapper h1 {
+        font-size: 30px;
+    }
+    .grand_hotel_slider {
+        height: 450px;
+    }
+    .testimonials {
+        padding: 20px 15px;
+    }
+    .inner_div ul {
+        margin: 10px 0 20px 60px;
+    }
+    .inner_div span {
+        margin-right: 7px;
+    }
+    .inner_div ul li a {
+        font-size: 12px;
+    }
+    .grand_hotel {
+        margin-bottom: 40px;
+    }
+    .ratings_wrapper > div {
+        float: none;
+        clear: both;
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
     }
 }
 
@@ -756,7 +814,7 @@
     .inspirational h2 {
         top: 0;
         font-size: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .what_client_say .packages_wrapper {
         margin: 0 auto 20px;
@@ -854,6 +912,113 @@
     }
     .room_content .package_price > p {
         font-size: 20px;
+    }
+    .main_calender {
+        width: 290px;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 30px auto 0;
+    }
+    .main_calender .filter_inner {
+        padding: 20px 0 0;
+        display: block;
+    }
+    .client_review .ceo_img {
+        width: auto;
+        float: none;
+        clear: both;
+        margin-bottom: 30px;
+    }
+    .client_review .ceo_img img {
+        display: block;
+        margin: 0 auto;
+    }
+    .client_review .ceo_txt {
+        width: 100%;
+        float: none;
+        clear: both;
+        text-align: center;
+    }
+    .restaurant_wrapper .row > div > span {
+        text-align: center;
+    }
+    .restaurant_wrapper h1 {
+        display: block;
+        text-align: center;
+    }
+    .grand_hotel_info {
+        padding: 20px;
+        top: 0;
+        position: relative;
+        width: auto;
+        margin-top: 10px;
+    }
+    .grand_hotel_info h2 {
+        width: auto;
+        max-width: 100%;
+    }
+    .stars {
+        margin-bottom: 10px;
+    }
+    .testimonials_slider {
+        margin-top: 40px;
+    }
+    .common_gallery h1 > p {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .testimonials_slider .slide_wrapper {
+        border: none;
+        padding: 0 0 20px;
+        margin-bottom: 30px;
+    }
+    .testimonials_slider .slider_txt {
+        padding: 20px 15px;
+    }
+    .hotel_features > div {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+        clear: both;
+    }
+    .inner_div {
+        padding: 0;
+    }
+    .features_wrapper {
+        padding: 30px 0;
+    }
+    .testimonials_slider .slick-prev,
+    .testimonials_slider .slick-next {
+        display: block !important;
+        top: 95%;
+    }
+    .testimonials_slider .slick-prev,
+    .testimonials_slider .slick-next {
+        width: 35px;
+        height: 35px;
+        z-index: 1;
+    }
+    .testimonials_slider .slick-prev,
+    .testimonials_slider .slick-prev:hover,
+    .testimonials_slider .slick-prev:focus {
+        left: 40%;
+        background-size: 100%;
+    }
+    .testimonials_slider .slick-next,
+    .testimonials_slider .slick-next:hover,
+    .testimonials_slider .slick-next:focus {
+        right: 40%;
+        background-size: 100%;
+    }
+    .ratings_wrapper {
+        padding: 40px 0 20px;
+    }
+    .main_calender .view_all {
+        margin-top: 20px;
+    }
+    .ratings_wrapper > div {
+        width: 100%;
     }
 }
 
@@ -980,4 +1145,14 @@
     .room_content .pull-left > div.package_include {
         width: 100%;
     }
+    .restaurant_wrapper address span,
+    .restaurant_wrapper address a {
+        padding-right: 10px;
+        font-size: 12px;
+    }
+    .grand_hotel_info > div a {
+        display: block;
+        width: 100%;
+    }
+
 }
