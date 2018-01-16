@@ -19,6 +19,7 @@
     <link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
     <link href="css/jquery.fancybox.css" rel="stylesheet">
     <link href="css/mansory.css" rel="stylesheet">
+    <link href="css/rateit.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -37,7 +38,7 @@
 
 <body>
     <header>
-        <div class="top_header hidden-xs">
+        <div class="top_header hidden-xs hidden-sm">
             <div class="container-fluid">
                 <div class="main_row">
                     <div class="top_nav clearfix">
@@ -197,6 +198,7 @@ page it will render here dynamically... -->
     <script src="js/wow.min.js"></script>
     <script src="js/freewall.js"></script>
     <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.rateit.js"></script>
     <script src="js/custom.js"></script>
     @yield('scripts')
     <!--  this @yeild scripts is to render scripts for different pages  -->

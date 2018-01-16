@@ -177,6 +177,17 @@ $(document).ready(function () {
         speed: 300
     });
 
+    $('.testimonials_slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        infinite: true,
+        speed: 300
+    });
+
+
     // weddings slider
 
     $('.responsive4').slick({
@@ -211,7 +222,7 @@ $(document).ready(function () {
         w = 1 + 3 * Math.random() << 0;
         html += temp.replace(/\{width\}/g, w * 150).replace("{index}", i + 1);
     }
-    $("#freewall").html(html);
+    $("#freewall_new,#freewall").html(html);
 
     var wall = new Freewall("#freewall");
     wall.reset({
@@ -223,10 +234,28 @@ $(document).ready(function () {
             wall.fitWidth();
         }
     });
+
+    // resize and call function for another gallery on Main hotel page photos TAB
+
+    var wall1 = new Freewall("#freewall_new");
+    wall1.reset({
+        selector: '.brick',
+        animate: true,
+        //cellW: 150,
+        cellH: 'auto',
+        onResize: function () {
+            wall1.fitWidth();
+        }
+    });
     //$(".brick img").wrap('<a href="images/{index}.jpg" class="fancybox" data-fancybox-group="gallery"></a>');
     var images = wall.container.find('.brick');
     images.find('img').load(function () {
         wall.fitWidth();
+
+    });
+    var images1 = wall1.container.find('.brick');
+    images1.find('img').load(function () {
+        wall1.fitWidth();
 
     });
 
@@ -243,14 +272,23 @@ $(document).ready(function () {
 
         // on load of the tab
         wall.fitWidth();
+        wall1.fitWidth();
     });
 
     // wow js
 
     new WOW().init();
 
+    // toggle main calender
+
+    $(".main_calender h3").click(function () {
+        $(this).parent().children(".filter_inner").slideToggle();
+        $(this).toggleClass("toggle_up");
+
+    });
+
 }); // document ready ends here
 
 $(document).load(function () {
-    $(window).trigger("#freewall");
+    $(window).trigger("#freewall_new,#freewall");
 });
