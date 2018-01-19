@@ -9,7 +9,7 @@
     <title>Sheetz | Hotel</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    {{--<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
     <link href="css/slick-theme.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -21,7 +21,8 @@
     <link href="css/mansory.css" rel="stylesheet">
     <link href="css/rateit.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">--}}
+    <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
     <!--  this @yeild styles is to render styles for different pages  -->
@@ -139,7 +140,7 @@ page it will render here dynamically... -->
                 <div class="col-sm-2 hidden-xs">
                     <h4>Hotels</h4>
                     <ul class="footer_links">
-                        <li><a href="#">Bad Boekelox</a></li>
+                        <li><a href="#">Bad Boekelos</a></li>
                         <li><a href="#">Venti Hotel Luxury</a></li>
                         <li><a href="#">Hotel Oosterhout</a></li>
                         <li><a href="#">Grand Hotel Ter Duin</a></li>
@@ -148,18 +149,18 @@ page it will render here dynamically... -->
                 <div class="col-sm-2 hidden-xs">
                     <h4>PACKAGES</h4>
                     <ul class="footer_links">
-                        <li><a href="#">Business packagex</a></li>
-                        <li><a href="#">VIP package</a></li>
-                        <li><a href="#">Premium package</a></li>
+                        <li><a href="/packages">Business packages</a></li>
+                        <li><a href="/packages">VIP package</a></li>
+                        <li><a href="/packages">Premium package</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2 hidden-xs">
                     <h4>Start planning</h4>
                     <ul class="footer_links">
-                        <li><a href="#">Eventsx</a></li>
-                        <li><a href="#">Weddings</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="/weddings">Weddings</a></li>
                         <li><a href="#">Conferences</a></li>
-                        <li><a href="#">Meetings</a></li>
+                        <li><a href="/meetings">Meetings</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2 hidden-xs">
@@ -167,17 +168,17 @@ page it will render here dynamically... -->
                     <ul class="footer_links">
                         <li><a href="#">Featured Destinations</a></li>
                         <li><a href="#">All Inclusive Services</a></li>
-                        <li><a href="#">Travel Packages</a></li>
-                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="/packages">Travel Packages</a></li>
+                        <li><a href="/gifts">Gift Cards</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2 hidden-xs">
                     <h4>INFORMAtION</h4>
                     <ul class="footer_links">
-                        <li><a href="#">About usx</a></li>
+                        <li><a href="/aboutus">About us</a></li>
                         <li><a href="#">Terms and conditions</a></li>
                         <li><a href="#">Privacy and cookies</a></li>
-                        <li><a href="#">Vacancies</a></li>
+                        <li><a href="/vacancies">Vacancies</a></li>
                     </ul>
                 </div>
             </div>
@@ -189,7 +190,7 @@ page it will render here dynamically... -->
         </div>
     </footer>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
+    {{--<script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>
@@ -199,7 +200,8 @@ page it will render here dynamically... -->
     <script src="js/freewall.js"></script>
     <script src="js/jquery.fancybox.js"></script>
     <script src="js/jquery.rateit.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/custom.js"></script>--}}
+    <script src="js/main.js"></script>
     @yield('scripts')
     <!--  this @yeild scripts is to render scripts for different pages  -->
 
