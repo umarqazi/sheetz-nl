@@ -2739,19 +2739,3 @@ footer h4 {
 .main_calender .view_all {
     margin-bottom: 0;
 }
-/* Slick Slider Navigation Custom Code*/
-.slick-prev, .slick-next {
-    font-size: 0;
-    line-height: 0;
-    position: absolute;
-    top: 50%;
-    display: block;
-    padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    cursor: pointer;
-    color: transparent;
-    border: none;
-
-}

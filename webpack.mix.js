@@ -26,7 +26,7 @@ mix.styles([
     'public/css/jquery.fancybox.css',
     'public/css/mansory.css',
     'public/css/slick.css',
-    'public/css/sick-theme.css',
+    'public/css/slick-theme.css',
     'public/css/rateit.css',
     'public/css/custom.css',
     'public/css/responsive.css'
