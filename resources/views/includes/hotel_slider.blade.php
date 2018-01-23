@@ -201,5 +201,5 @@
             </div>
         </div>
     </div>
-    <a href="#" class="hvr-shutter-out-horizontal view_all hidden-xs">view all hotels</a>
+    <a href="/our_hotels" class="hvr-shutter-out-horizontal view_all hidden-xs">view all hotels</a>
 </div>

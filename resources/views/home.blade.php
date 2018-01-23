@@ -16,7 +16,7 @@
                 <li class="dropdown">
                     <img src="images/icon1.png">
                     <select class="selectpicker">
-                    <option><span>aaa</span></option>
+                    <option><span>Select Hotel</span></option>
                     <option><span>aaa</span></option>
                 </select>
                 </li>
@@ -31,7 +31,7 @@
                 <li class="dropdown">
                     <img src="images/icon4.png">
                     <select class="selectpicker">
-                    <option><span>qwqaaa</span></option>
+                    <option><span>Room Type</span></option>
                     <option><span>aaa</span></option>
                 </select>
                 </li>
