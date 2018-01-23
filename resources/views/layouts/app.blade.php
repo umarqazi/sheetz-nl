@@ -8,20 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Sheetz | Hotel</title>
 
-    <!-- Bootstrap -->
-    {{--<link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/slick.css" rel="stylesheet">
-    <link href="css/slick-theme.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/hover.css" rel="stylesheet">
-    <link href="css/bootstrap-select.min.css" rel="stylesheet">
-    <link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
-    <link href="css/jquery.fancybox.css" rel="stylesheet">
-    <link href="css/mansory.css" rel="stylesheet">
-    <link href="css/rateit.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">--}}
+    <!-- Main.css is the file that contain all Merged & Minified css -->
     <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
@@ -190,17 +177,7 @@ page it will render here dynamically... -->
         </div>
     </footer>
 
-    {{--<script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
-    <script src="js/bootstrap-select.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/freewall.js"></script>
-    <script src="js/jquery.fancybox.js"></script>
-    <script src="js/jquery.rateit.js"></script>
-    <script src="js/custom.js"></script>--}}
+    <!-- Main.js is the file that contain all Merged & Minified Js -->
     <script src="js/main.js"></script>
     @yield('scripts')
     <!--  this @yeild scripts is to render scripts for different pages  -->
