@@ -12,5 +12,53 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/aboutus', function () {
+    return view('aboutus');
+});
+
+Route::get('/our_hotels', function () {
+    return view('our_hotels');
+});
+
+Route::get('/vacancies', function () {
+    return view('vacancies');
+});
+
+Route::get('/vacancy_details', function () {
+    return view('vacancy_details');
+});
+
+Route::get('/package_card', function () {
+    return view('package_card');
+});
+
+Route::get('/packages', function () {
+    return view('packages');
+});
+
+Route::get('/wellness', function () {
+    return view('wellness');
+});
+
+Route::get('/wellness_card', function () {
+    return view('wellness_card');
+});
+
+Route::get('/gifts', function () {
+    return view('gifts');
+});
+
+Route::get('/meetings', function () {
+    return view('meetings');
+});
+
+Route::get('/weddings', function () {
+    return view('weddings');
+});
+
+Route::get('/hotel', function () {
+    return view('hotel');
 });
