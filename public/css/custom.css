@@ -22,7 +22,7 @@
 html,
 body {
     height: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppinsregular';
     color: #424242;
 }
 
@@ -55,7 +55,7 @@ h6 {
 
 p {
     margin-bottom: 0;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     line-height: 25px;
 }
 
@@ -375,7 +375,7 @@ header .main_nav {
 
     font-style: italic;
 
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     font-weight: 600;
 }
 
@@ -663,7 +663,7 @@ header .main_nav {
 .packages h1 {
     font-size: 48px;
     margin-bottom: 50px;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     font-style: italic;
 }
 
@@ -939,7 +939,7 @@ header .main_nav {
     display: inline-block;
     font-size: 12px;
     opacity: .6;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
 }
 
 .img_likes {
@@ -1097,7 +1097,7 @@ footer {
 .footer_desc {
     line-height: normal;
     margin: 30px 0;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
 }
 
 .footer_logo {
@@ -1124,7 +1124,7 @@ footer h4 {
 .footer_links li a {
     display: block;
     padding-bottom: 20px;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
 }
 
 .footer_links li:last-child a {
@@ -1220,7 +1220,7 @@ footer h4 {
     line-height: 25px;
     margin-bottom: 40px;
     display: block;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
 }
 
 .ceo_txt span {
@@ -1244,7 +1244,7 @@ footer h4 {
 .release_content h3 {
     text-transform: capitalize;
     margin-bottom: 30px;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     font-weight: 600;
 }
 
@@ -1257,7 +1257,7 @@ footer h4 {
 .release_content span {
     display: block;
     padding: 10px 0;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
 }
 
 .release_content a {
@@ -1279,7 +1279,7 @@ footer h4 {
     height: auto;
     line-height: normal;
     margin-bottom: 30px !important;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
 }
 
 .release_content .view_our_menu > a {
@@ -1287,7 +1287,7 @@ footer h4 {
     height: auto;
     color: #424242 !important;
     text-decoration: underline !important;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     font-weight: 400;
     padding: 5px 0;
 }
@@ -1328,7 +1328,7 @@ footer h4 {
 
 .our_hotels_content h3 span {
     color: #fff;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     font-weight: 600;
     font-style: italic;
     margin-bottom: 10px;
@@ -1401,7 +1401,7 @@ footer h4 {
     display: block;
     padding-top: 5px;
     font-size: 14px;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     opacity: .6;
 }
 
@@ -1451,7 +1451,7 @@ footer h4 {
 .package_include li,
 .terms_conditions li,
 .package_desc li {
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     padding: 0 5px 5px 15px;
     position: relative;
 }
@@ -1784,7 +1784,7 @@ footer h4 {
 .have_you_received h2 {
     margin-bottom: 20px;
     font-weight: 600;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
 }
 
 .vouchars_wrapper {
@@ -1873,7 +1873,7 @@ footer h4 {
 .downloads span {
     display: inline-block;
     font-weight: 600;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     text-decoration: underline;
 
 }
@@ -1930,7 +1930,7 @@ footer h4 {
 }
 
 .fix_you_need h1 {
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     font-size: 48px;
     padding: 0 15px;
 }
@@ -2054,7 +2054,7 @@ footer h4 {
     background-color: #000;
     padding: 5px 20px;
     text-align: center;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     margin-top: 10px;
 }
 
@@ -2124,7 +2124,7 @@ footer h4 {
 }
 
 .best_days h1 {
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     font-size: 48px;
 }
 
@@ -2185,7 +2185,7 @@ footer h4 {
     display: inline-block;
     padding: 10px 20px;
     font-weight: 600;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
 }
 
 .restaurant_wrapper .row > div img {
@@ -2221,7 +2221,7 @@ footer h4 {
     padding-right: 20px;
     font-weight: 500;
     color: inherit;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppinsregular';
 }
 
 .restaurant_wrapper address span.gold {
@@ -2318,7 +2318,7 @@ footer h4 {
     display: block;
     text-decoration: underline;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppinsregular';
     margin: 10px 0;
 }
 
@@ -2330,7 +2330,7 @@ footer h4 {
 .our_locations > span {
     color: #fff;
     background-color: #ba9e76;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     font-size: 24px;
     padding: 5px 20px;
     display: inline-block;
@@ -2486,7 +2486,7 @@ footer h4 {
 
 .progress em {
     font-size: 36px;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     display: inline-block;
     vertical-align: top;
     text-align: right;
@@ -2536,7 +2536,7 @@ footer h4 {
 .ratings_wrapper > div p {
     text-align: left;
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppinsregular';
     margin-bottom: 20px;
 }
 
@@ -2596,7 +2596,7 @@ footer h4 {
     color: #979797;
     font-size: 16px;
     line-height: 25px;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
 }
 
 .features_wrapper {
@@ -2633,7 +2633,7 @@ footer h4 {
     color: #fff;
     font-weight: 600;
     padding: 10px 20px;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     display: inline-block;
     z-index: 1;
 }
@@ -2672,7 +2672,7 @@ footer h4 {
 
 .inner_div ul li a {
     display: block;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular';
     padding: 3px 0;
 }
 

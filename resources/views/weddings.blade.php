@@ -5,7 +5,7 @@
     <div class="main_banner">
         <div class="hotel_description text-center">
             <h1>WEDDINGS</h1>
-            <p>The best day of your life, in the most <strong>beautiful locations</strong> in the Netherlands</p>
+            <p>The best day of your life, in the most <span class="white_txt">beautiful locations</span> in the Netherlands</p>
 
         </div>
     </div>
@@ -73,7 +73,7 @@
             <p class="view_popular">
                 The <span>best day</span>
             </p>
-            <h1><em>Of their lives</em></h1>
+            <h1>Of their lives</h1>
             <div class="packages_wrapper clearfix">
                 <div class="responsive4">
                     <div class="media">

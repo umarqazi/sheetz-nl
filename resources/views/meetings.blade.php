@@ -5,7 +5,7 @@
     <div class="main_banner">
         <div class="hotel_description text-center">
             <h1>MEETINGS AT SHEETZ</h1>
-            <p>Because meetings should be a <span class="black">source of inspiration</span></p>
+            <p>Because meetings should be a <span class="white_txt">source of inspiration</span></p>
 
         </div>
     </div>

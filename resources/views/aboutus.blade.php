@@ -6,7 +6,7 @@
         <div class="hotel_description text-center">
             <h1>ABOUT US</h1>
 
-            <p>We take pride in service with great<span class="white_txt"><em>attention</em></span>to detail</p>
+            <p>We take pride in service with great<span class="white_txt">attention</span>to detail</p>
 
         </div>
     </div>

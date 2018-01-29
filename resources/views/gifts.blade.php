@@ -6,7 +6,7 @@
     <div class="main_banner">
         <div class="hotel_description text-center">
             <h1>GIFT VOUCHERS</h1>
-            <p>Would you like to treat someone to an <strong>original gift?</strong></p>
+            <p>Would you like to treat someone to an <span class="white_txt">original gift?</span></p>
 
         </div>
     </div>
