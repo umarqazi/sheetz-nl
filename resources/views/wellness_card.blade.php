@@ -6,7 +6,7 @@
     <div class="main_banner">
         <div class="hotel_description text-center">
             <h1>WELLNESS PACKAGE</h1>
-            <p>Relax with a pampering <strong>wellness package</strong></p>
+            <p>Relax with a pampering <span class="white_txt">wellness package</span></p>
 
         </div>
     </div>

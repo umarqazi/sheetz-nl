@@ -5,7 +5,7 @@
     <div class="main_banner">
         <div class="hotel_description text-center">
             <h1>SHEETZ PACKAGES</h1>
-            <p>Enjoy nature, culture or shopping with these <strong>attractive packages</strong></p>
+            <p>Enjoy nature, culture or shopping with these <span class="white_txt">attractive packages</span></p>
 
         </div>
     </div>
