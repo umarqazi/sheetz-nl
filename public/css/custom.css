@@ -236,7 +236,7 @@ header .main_nav {
 }
 
 .black {
-    background-color: #000;
+    background-color: #424242;
     color: #fff;
     padding: 3px 10px;
 }
@@ -635,7 +635,7 @@ header .main_nav {
 }
 
 .view_details {
-    border: 2px solid #000;
+    border: 2px solid #424242;
     padding: 15px;
 }
 
@@ -652,7 +652,7 @@ header .main_nav {
 
 .view_popular {
     display: inline-block;
-    background-color: #000;
+    background-color: #424242;
     color: #fff;
     padding: 5px 20px;
     font-weight: 500;
@@ -672,7 +672,7 @@ header .main_nav {
 }
 
 .featured_package div > img {
-    border: 3px solid #000;
+    border: 3px solid #424242;
     padding: 15px;
     max-width: 100%;
 }
@@ -714,7 +714,7 @@ header .main_nav {
     width: 180px;
     margin: 40px auto 0 0;
     color: #fff !important;
-    background-color: #000;
+    background-color: #424242;
     border: 2px solid transparent;
     text-align: center;
     font-family: 'Proxima Nova';
@@ -736,9 +736,9 @@ header .main_nav {
 .readmore:hover,
 .readmore:focus,
 .readmore:active {
-    color: #000 !important;
+    color: #424242 !important;
     background-color: #fff;
-    border-color: #000;
+    border-color: #424242;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
@@ -966,7 +966,7 @@ header .main_nav {
 }
 
 .social_links {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #424242;
     padding: 40px 0;
     margin-bottom: 50px;
 }
@@ -986,8 +986,8 @@ header .main_nav {
     height: 55px;
     line-height: 55px;
     color: #fff !important;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #424242;
+    border: 1px solid #424242;
     margin: 0 10px;
     font-size: 18px;
     -webkit-transition: all .2s ease-in;
@@ -997,7 +997,7 @@ header .main_nav {
 .social_links li a:hover,
 .social_links li a:focus,
 .social_links li a:active {
-    color: #000 !important;
+    color: #424242 !important;
     background-color: #fff;
 }
 
@@ -1006,7 +1006,7 @@ header .main_nav {
 }
 
 .icon_set {
-    border: 5px solid #000;
+    border: 5px solid #424242;
     padding: 50px;
     text-align: center;
     position: relative;
@@ -1193,7 +1193,7 @@ footer h4 {
     margin-top: 80px;
     padding: 0 25px;
     position: relative;
-    border-bottom: 5px solid #000;
+    border-bottom: 5px solid #424242;
 }
 
 .ceo_message > div {
@@ -1237,7 +1237,7 @@ footer h4 {
 
 .release_content {
     min-height: 300px;
-    border: 4px solid #000;
+    border: 4px solid #424242;
     padding: 40px 15px;
 }
 
@@ -1577,7 +1577,7 @@ footer h4 {
 }
 
 .hotel_description p strong {
-    color: #000;
+    color: #424242;
     background-color: #ba9e76;
     padding: 2px 10px;
 }
@@ -1685,7 +1685,7 @@ footer h4 {
 .wellness_packages h2 {
     display: inline-block;
     margin-bottom: 30px;
-    background-color: #000;
+    background-color: #424242;
     color: #ba9e76;
     padding: 10px 30px;
 }
@@ -2051,7 +2051,7 @@ footer h4 {
 
 .wedding_form h2 {
     color: #fff;
-    background-color: #000;
+    background-color: #424242;
     padding: 5px 20px;
     text-align: center;
     font-family: 'pt_serifregular';
@@ -2139,7 +2139,7 @@ footer h4 {
     width: 100%;
     min-width: 1140px;
     margin: 0 auto;
-    background-color: #000;
+    background-color: #424242;
 }
 
 .hotel_menu .nav-tabs > li {
@@ -2180,7 +2180,7 @@ footer h4 {
 }
 
 .restaurant_wrapper h1 {
-    background-color: #000;
+    background-color: #424242;
     color: #fff;
     display: inline-block;
     padding: 10px 20px;
@@ -2418,7 +2418,7 @@ footer h4 {
 }
 
 .grand_hotel_info {
-    border: 4px solid #000;
+    border: 4px solid #424242;
     width: 480px;
     margin: 0 auto 0 0;
     padding: 40px 30px;
