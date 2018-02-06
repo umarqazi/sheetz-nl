@@ -83,7 +83,7 @@
                             <li><a href="/hotel" class="hvr-overline-from-center">HOTELS</a></li>
                             <li><a href="/packages" class="hvr-overline-from-center">PACKAGES</a></li>
                             <li><a href="/meetings" class="hvr-overline-from-center">MEETINGS</a></li>
-                            <li><a href="#" class="hvr-overline-from-center">EVENTS</a></li>
+                            <li><a href="/events" class="hvr-overline-from-center">EVENTS</a></li>
                             <li><a href="/wellness" class="hvr-overline-from-center">WELLNESS</a></li>
                             <li><a href="/weddings" class="hvr-overline-from-center">WEDDINGS</a></li>
 
@@ -144,16 +144,16 @@ page it will render here dynamically... -->
                 <div class="col-sm-2 hidden-xs">
                     <h4>Start planning</h4>
                     <ul class="footer_links">
-                        <li><a href="#">Events</a></li>
+                        <li><a href="/events">Events</a></li>
                         <li><a href="/weddings">Weddings</a></li>
-                        <li><a href="#">Conferences</a></li>
+                        <li><a href="/conference">Conferences</a></li>
                         <li><a href="/meetings">Meetings</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2 hidden-xs">
                     <h4>EXPLORE</h4>
                     <ul class="footer_links">
-                        <li><a href="#">Featured Destinations</a></li>
+                        <li><a href="/our_hotels">Featured Destinations</a></li>
                         <li><a href="#">All Inclusive Services</a></li>
                         <li><a href="/packages">Travel Packages</a></li>
                         <li><a href="/gifts">Gift Cards</a></li>
