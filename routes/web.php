@@ -11,6 +11,8 @@
 |
 */
 
+/*/////////////////////////////////////*/
+/*//////////FRONTEND ROUTES///////////*/
 Route::get('/', function () {
     return view('home');
 });
@@ -70,3 +72,23 @@ Route::get('/hotel', function () {
 Route::get('/confrence', function () {
     return view('confrence');
 });
+
+/*/////////////////////////////////////*/
+/*///////////BACKEND ROUTES///////////*/
+Route::prefix('/admin')->group(function (){
+
+    Route::group(['middleware'  => 'auth'], function(){
+        Route::get('/customers', function (){
+            return view('admin/customers');
+        });
+    });
+
+    Auth::routes();
+
+    Route::get('/dashboard', 'HomeController@index')->name('dashboard');
+});
+
+
+
+
+
