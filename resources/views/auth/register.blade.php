@@ -30,7 +30,8 @@
 <body class="hold-transition register-page">
 <div class="register-box">
     <div class="register-logo">
-        <a href="/admin/dashboard"><b>Admin</b>LTE</a>
+        <a href="/admin/dashboard"><img src="{{URL::to('images/logo.png')}}"></a>
+        {{--<a href="/admin/dashboard"><b>Admin</b>LTE</a>--}}
     </div>
 
     <div class="register-box-body">
@@ -90,7 +91,7 @@
                     </div>
                 </div>
             </form>
-        <a href="/login" class="text-center"><b>Already A Member??</b></a>
+        <a href="/admin/login" class="text-center"><b>Already A Member??</b></a>
     </div>
 </div>
 </body>
