@@ -30,7 +30,8 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="/admin/dashboard"><b>Admin</b>LTE</a>
+        <a href="/admin/dashboard"><img src="{{URL::to('images/logo.png')}}"></a>
+        {{--<a href="/admin/dashboard"><b>Admin</b>LTE</a>--}}
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
@@ -66,7 +67,7 @@
 
                 <div class="form-group has-feedback{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
 
-                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                    <input id="password-confirm" type="password" class="form-control" placeholder="Retype Password" name="password_confirmation" required>
                     <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
 
                     @if ($errors->has('password_confirmation'))

@@ -14,65 +14,68 @@
 /*/////////////////////////////////////*/
 /*//////////FRONTEND ROUTES///////////*/
 Route::get('/', function () {
-    return view('home');
+    return view('user/home');
 });
 
 Route::get('/aboutus', function () {
-    return view('aboutus');
+    return view('user/aboutus');
 });
 
 Route::get('/our_hotels', function () {
-    return view('our_hotels');
+    return view('user/our_hotels');
 });
 
 Route::get('/vacancies', function () {
-    return view('vacancies');
+    return view('user/vacancies');
 });
 
 Route::get('/vacancy_details', function () {
-    return view('vacancy_details');
+    return view('user/vacancy_details');
 });
 
 Route::get('/package_card', function () {
-    return view('package_card');
+    return view('user/package_card');
 });
 
 Route::get('/packages', function () {
-    return view('packages');
+    return view('user/packages');
 });
 
 Route::get('/wellness', function () {
-    return view('wellness');
+    return view('user/wellness');
 });
 
 Route::get('/wellness_card', function () {
-    return view('wellness_card');
+    return view('user/wellness_card');
 });
 
 Route::get('/gifts', function () {
-    return view('gifts');
+    return view('user/gifts');
 });
 
 Route::get('/meetings', function () {
-    return view('meetings');
+    return view('user/meetings');
 });
 
 Route::get('/weddings', function () {
-    return view('weddings');
+    return view('user/weddings');
 });
 
 Route::get('/events', function () {
-    return view('events');
+    return view('user/events');
 });
 
 Route::get('/hotel', function () {
-    return view('hotel');
+    return view('user/hotel');
 });
 
-Route::get('/confrence', function () {
-    return view('confrence');
+Route::get('/conference', function () {
+    return view('user/conference');
 });
 
+Route::get('/layout', function (){
+   return view('layouts/admin');
+});
 /*/////////////////////////////////////*/
 /*///////////BACKEND ROUTES///////////*/
 Route::prefix('/admin')->group(function (){

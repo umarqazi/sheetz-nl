@@ -31,7 +31,8 @@
 
 <div class="login-box">
     <div class="login-logo">
-        <a href="/admin/dashboard"><b>Admin</b>LTE</a>
+        {{--<a href="/admin/dashboard"><b>Admin</b>LTE</a>--}}
+        <a href="/admin/dashboard"><img src="{{URL::to('images/logo.png')}}"></a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
@@ -83,7 +84,7 @@
             </div>
         </form>
 
-        <a href="/register" class="text-center">Register a new membership</a>
+        <a href="/admin/register" class="text-center">Register a new membership</a>
     </div>
 </div>
 <!-- /.login-box -->
