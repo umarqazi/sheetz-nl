@@ -262,7 +262,13 @@
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="/images/admin/user2-160x160.jpg" class="user-image" alt="User Image">
-                            <span class="hidden-xs">Alexander Pierce</span>
+                            <span class="hidden-xs">
+                                @if(Auth::guest())
+                                    Alexander Pierce
+                                @else
+                                    {{ ucwords(Auth::user()->name) }}
+                                @endif
+                            </span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
@@ -270,7 +276,12 @@
                                 <img src="/images/admin/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                                 <p>
-                                    Alexander Pierce - Web Developer
+                                    @if(Auth::guest())
+                                        Alexander Pierce
+                                    @else
+                                        {{ ucwords(Auth::user()->name) }} - Web Developer
+                                    @endif
+
                                     <small>Member since Nov. 2012</small>
                                 </p>
                             </li>
@@ -297,13 +308,13 @@
                                 <div class="pull-right">
                                     {{--<a href="#" class="btn btn-default btn-flat">Sign out</a>--}}
 
-                                    <a href="{{ route('logout') }}" class="btn btn-default btn-flat"
+                                    <a href="{{ route('admin.logout') }}" class="btn btn-default btn-flat"
                                        onclick="event.preventDefault();
-                     document.getElementById('logout-form').submit();">
+                                        document.getElementById('logout-form').submit();">
                                         Logout
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
                                         {{ csrf_field() }}
                                     </form>
                                 </div>
@@ -328,7 +339,13 @@
                     <img src="/images/admin/user2-160x160.jpg" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
-                    <p>Alexander Pierce</p>
+                    <p>
+                        @if(Auth::guest())
+                            Alexander Pierce
+                        @else
+                            {{ ucwords(Auth::user()->name) }}
+                        @endif
+                    </p>
                     <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
             </div>
