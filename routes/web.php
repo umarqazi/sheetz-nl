@@ -84,9 +84,10 @@ Route::prefix('/admin')->group(function (){
     Route::get('/dashboard', 'AdminController@index')->name('dashboard');
 
     Route::group(['middleware'  => 'auth:admin'], function(){
-        Route::get('/customers', function (){
-            return view('admin/customers');
-        });
+
+        Route::get('/customers', 'UserController@index')->name('admin.customers');
+
+        Route::get('/administrators', 'AdminController@show')->name('admin.administrators');
     });
 
     //Admin Login Routes
