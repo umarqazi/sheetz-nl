@@ -1,4 +1,5 @@
 @extends('layouts/admin')
+
 @section('content')
   <!-- Content Header (Page header) -->
   <section class="content-header">
@@ -29,30 +30,16 @@
                 <th>Date</th>
                 <th>Email</th>
               </tr>
-              <tr>
-                <td>183</td>
-                <td>John Doe</td>
-                <td>11-7-2014</td>
-                <td>johndoe@gmail.com</td>
-              </tr>
-              <tr>
-                <td>219</td>
-                <td>Alexander Pierce</td>
-                <td>11-7-2014</td>
-                <td>alexanderpierce@gmail.com</td>
-              </tr>
-              <tr>
-                <td>657</td>
-                <td>Bob Doe</td>
-                <td>11-7-2014</td>
-                <td>bobdoe@gmail.com</td>
-              </tr>
-              <tr>
-                <td>175</td>
-                <td>Mike Doe</td>
-                <td>11-7-2014</td>
-                <td>mikedoe@gmail.com</td>
-              </tr>
+              
+              @foreach($users as $user)
+                <tr>
+                  <td>{{$user->id}}</td>
+                  <td>{{ucwords($user->name)}}</td>
+                  <td>{{$user->created_at->format('d-m-Y')}}</td>
+                  <td>{{$user->email}}</td>
+                </tr>
+              @endforeach
+            
             </table>
           </div>
           <!-- /.box-body -->

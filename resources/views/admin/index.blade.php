@@ -22,7 +22,7 @@
                     <div class="inner">
                         <h3>150</h3>
 
-                        <p>New Orders</p>
+                        <p>New Bookings</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-bag"></i>
@@ -37,7 +37,7 @@
                     <div class="inner">
                         <h3>53<sup style="font-size: 20px">%</sup></h3>
 
-                        <p>Bounce Rate</p>
+                        <p>Like Rate</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-stats-bars"></i>
@@ -52,7 +52,7 @@
                     <div class="inner">
                         <h3>44</h3>
 
-                        <p>User Registrations</p>
+                        <p>New Registrations</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-person-add"></i>
@@ -81,7 +81,7 @@
         <!-- Main row -->
         <div class="row">
             <!-- Left col -->
-            <section class="col-lg-7 connectedSortable">
+            {{--<section class="col-lg-7 connectedSortable">
                 <!-- Custom tabs (Charts with tabs)-->
                 <div class="nav-tabs-custom">
                     <!-- Tabs within a box -->
@@ -332,10 +332,10 @@
                     </div>
                 </div>
 
-            </section>
+            </section>--}}
             <!-- /.Left col -->
             <!-- right col (We are only adding the ID to make the widgets sortable)-->
-            <section class="col-lg-5 connectedSortable">
+            <section class="col-lg-6 connectedSortable">
 
                 <!-- Map box -->
                 <div class="box box-solid bg-light-blue-gradient">
@@ -384,6 +384,10 @@
                 </div>
                 <!-- /.box -->
 
+            </section>
+            <!-- right col -->
+
+            <section class="col-lg-6 connectedSortable">
                 <!-- solid sales graph -->
                 <div class="box box-solid bg-teal-gradient">
                     <div class="box-header">
@@ -431,7 +435,9 @@
                     <!-- /.box-footer -->
                 </div>
                 <!-- /.box -->
+            </section>
 
+            <section class="col-lg-6 connectedSortable">
                 <!-- Calendar -->
                 <div class="box box-solid bg-green-gradient">
                     <div class="box-header">
@@ -508,9 +514,7 @@
                     </div>
                 </div>
                 <!-- /.box -->
-
             </section>
-            <!-- right col -->
         </div>
         <!-- /.row (main row) -->
 
