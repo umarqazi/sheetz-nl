@@ -113,5 +113,4 @@ Route::prefix('/admin')->group(function (){
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/logout', 'Auth\LoginController@userLogout')->name('user.logout');
 
