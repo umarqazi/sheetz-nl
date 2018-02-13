@@ -93,7 +93,13 @@
                     </div>
                     <ul class="nav navbar-nav navbar-right myreservations">
                         <li>
-                            <a href="#" class="hvr-sweep-to-right"><img src="images/user.png"><span> My RESERVATIONS</span></a>
+                            <a href="{{ route('logout') }}" class="hvr-sweep-to-right"
+                               onclick="event.preventDefault();
+                               document.getElementById('logout-form').submit();"><img src="images/user.png"><span> My RESERVATIONS</span></a>
+
+                            <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: block;">
+                                {{ csrf_field() }}
+                            </form>
                         </li>
 
                     </ul>
