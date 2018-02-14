@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 
 class AdminLoginController extends Controller
 {
@@ -14,7 +15,15 @@ class AdminLoginController extends Controller
     }*/
 
     public function showLoginForm(){
-        return view('admin.login');
+
+        if (Gate::allows('admin-login')) {
+            return redirect('/');
+        }
+
+        else{
+            return view('admin.login');
+
+        }
     }
 
     public function login(Request $request){

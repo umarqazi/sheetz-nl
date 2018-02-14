@@ -81,17 +81,21 @@ Route::get('/layout', function (){
 Route::prefix('/admin')->group(function (){
 
     // Admin Panel Routes
-    Route::get('/dashboard', 'AdminController@index')->name('dashboard');
+    Route::get('/dashboard', 'AdminController@dashboard')->name('dashboard');
 
     Route::group(['middleware'  => 'auth:admin'], function(){
 
-        Route::get('/customers', 'UserController@index')->name('admin.customers');
+        // Resource Route For Customers
+        Route::resource('/customers', 'UsersController');
 
-        Route::get('/administrators', 'AdminController@show')->name('admin.administrators');
+        // Resource Route For Admins
+        Route::resource('/administrators', 'AdminController');
     });
 
     //Admin Login Routes
+
     Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+
     Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
 
     //Admin Register Routes
