@@ -27,7 +27,7 @@ class AuthServiceProvider extends ServiceProvider
 //        $this->registerPolicies();
 
         Gate::define('admin-login', function ($user) {
-           if ($user)
+           if (Auth::guard('web')->check())
            {
                return true;
            }

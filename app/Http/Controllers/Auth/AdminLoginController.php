@@ -16,17 +16,11 @@ class AdminLoginController extends Controller
 
     public function showLoginForm(){
 
-        if (Gate::allows('admin-login')) {
-            return redirect('/');
-        }
-
-        else{
             return view('admin.login');
-
-        }
     }
 
     public function login(Request $request){
+
         // Validate Form DATA
         $this->validate($request, [
             'email' => 'required|email',
@@ -35,6 +29,7 @@ class AdminLoginController extends Controller
 
         // Attempt to login
         if (Auth::guard('admin')->attempt(['email'=> $request->email, 'password' => $request->password], $request->remember)){
+
             // If successful then redirect to intended location
             return redirect()->intended(route('dashboard'));
         }
