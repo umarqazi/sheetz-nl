@@ -81,9 +81,13 @@ Route::get('/layout', function (){
 Route::prefix('/admin')->group(function (){
 
     // Admin Panel Routes
-    Route::get('/dashboard', 'AdminController@dashboard')->name('dashboard');
 
     Route::group(['middleware'  => 'auth:admin'], function(){
+        Route::get('/', function(){
+            return redirect()->route('dashboard');
+        });
+
+        Route::get('/dashboard', 'AdminController@dashboard')->name('dashboard');
 
         // Resource Route For Customers
         Route::resource('/customers', 'UsersController');
