@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 
 class AdminLoginController extends Controller
 {
@@ -14,10 +15,12 @@ class AdminLoginController extends Controller
     }*/
 
     public function showLoginForm(){
-        return view('admin.login');
+
+            return view('admin.login');
     }
 
     public function login(Request $request){
+
         // Validate Form DATA
         $this->validate($request, [
             'email' => 'required|email',
@@ -26,6 +29,7 @@ class AdminLoginController extends Controller
 
         // Attempt to login
         if (Auth::guard('admin')->attempt(['email'=> $request->email, 'password' => $request->password], $request->remember)){
+
             // If successful then redirect to intended location
             return redirect()->intended(route('dashboard'));
         }

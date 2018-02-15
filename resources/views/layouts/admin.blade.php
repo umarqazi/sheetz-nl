@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="/css/admin/daterangepicker.css">
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="/css/admin/bootstrap3-wysihtml5.min.css">
+    {{--Custom Admin Panel Stylesheet--}}
+    <link rel="stylesheet" href="/css/admin/custom.css">
 
     @yield('styles')
 
@@ -382,14 +384,19 @@
                         </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i>Create New Admin</a></li>
+                        <li><a href="/admin/administrators/create"><i class="fa fa-circle-o"></i>Create New Admin</a></li>
                         <li><a href="/admin/administrators"><i class="fa fa-circle-o"></i>View Admins</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="/admin/customers">
-                        <i class="fa fa-user"></i><span>Customers</span>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        <span>Customers</span>
                     </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/customers/create"><i class="fa fa-circle-o"></i>Create New User</a></li>
+                        <li><a href="/admin/customers"><i class="fa fa-circle-o"></i>View Users</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">

@@ -2,25 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Admin;
-use Session;
-use Illuminate\Http\Request;
+use App\User;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
+use Session;
+use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class UsersController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //$this->middleware('auth:admin');
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -28,9 +18,9 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $admins = Admin::all();
+        $users = User::all();
 
-        return view('admin/admin', compact('admins'));
+        return view('admin/customers', compact('users'));
     }
 
     /**
@@ -40,7 +30,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-        return view('admin/createAdmin');
+        return view('admin/createUser');
     }
 
     /**
@@ -62,28 +52,27 @@ class AdminController extends Controller
 
         if ($validator->fails()) {
 
-            return redirect('/admin/administrators/create')
+            return redirect('/admin/customers/create')
                 ->withErrors($validator)
                 ->withInput();
         }
 
         else{
-            $admin = new Admin;
+            $user = new User;
 
-            $admin->name = $request->name;
-            $admin->email = $request->email;
-            $admin->password = bcrypt($request->password);
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->password = bcrypt($request->password);
 
-            $admin->save();
+            $user->save();
 
-            /*Auth::guard('admin')->login($admin);*/
+            /*Auth::guard('admin')->login($user);*/
 
             // redirect
             Session::flash('message', 'An Admin Has Been Successfully Created!');
             Session::flash('alert-class', 'alert-success');
-            return redirect('/admin/administrators');
+            return redirect('/admin/customers');
         }
-
     }
 
     /**
@@ -105,9 +94,9 @@ class AdminController extends Controller
      */
     public function edit($id)
     {
-        $admin = Admin::find($id);
+        $user = User::find($id);
 
-        return view('admin/editAdmin', compact('admin',$admin));
+        return view('admin/editUser', compact('user', $user));
     }
 
     /**
@@ -130,24 +119,24 @@ class AdminController extends Controller
 
         if ($validator->fails()) {
 
-            return redirect('/admin/administrators/'.$id.'/edit')
+            return redirect('/admin/customers/'.$id.'/edit')
                 ->withErrors($validator)
                 ->withInput();
         }
 
         else {
-            $admin = Admin::find($id);
+            $user = User::find($id);
 
-            $admin->name = $request->name;
-            $admin->email = $request->email;
-            $admin->password = bcrypt($request->password);
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->password = bcrypt($request->password);
 
-            $admin->update();
+            $user->update();
 
             // redirect
             Session::flash('message', 'An Admin Has Been Successfully Updated!');
             Session::flash('alert-class', 'alert-success');
-            return redirect('/admin/administrators');
+            return redirect('/admin/customers');
         }
     }
 
@@ -159,20 +148,12 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        $admin = Admin::find($id);
-        $admin->delete();
+        $user = User::find($id);
+        $user->delete();
 
         // redirect
-        Session::flash('message', 'Successfully Deleted An Admin');
+        Session::flash('message', 'Successfully Deleted A User');
         Session::flash('alert-class', 'alert-success');
-        return Redirect::to('/admin/administrators');
-    }
-
-
-    // Custom Function To Show Admin Dashboard After Login Authentication
-
-    public function dashboard()
-    {
-        return view('admin/index');
+        return Redirect::to('/admin/customers/');
     }
 }

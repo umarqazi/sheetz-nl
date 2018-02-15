@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Validator;
 
 class AdminRegisterController extends Controller
 {
-    public function __construct()
+    /*public function __construct()
     {
         $this->middleware('guest:admin');
-    }
+    }*/
 
     public function showRegisterForm(){
         return view('admin.register');
