@@ -73,9 +73,17 @@ Route::get('/conference', function () {
     return view('user/conference');
 });
 
-Route::get('/layout', function (){
-   return view('layouts/admin');
+// my reservations page shows account info and booking details etc...
+
+Route::get('/my_reservations', function (){
+   return view('user/my_reservations');
 });
+
+//Route::get('/layout', function (){
+//   return view('layouts/admin');
+//});
+
+
 /*/////////////////////////////////////*/
 /*///////////BACKEND ROUTES///////////*/
 Route::prefix('/admin')->group(function (){
@@ -125,4 +133,3 @@ Route::prefix('/admin')->group(function (){
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-
