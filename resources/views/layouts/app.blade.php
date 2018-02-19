@@ -93,13 +93,14 @@
                     </div>
                     <ul class="nav navbar-nav navbar-right myreservations">
                         <li>
-                            <a href="{{ route('logout') }}" class="hvr-sweep-to-right"
-                               onclick="event.preventDefault();
+                            <a href="{{ route('logout') }}" class="hidden hvr-sweep-to-right" onclick="event.preventDefault();
                                document.getElementById('logout-form').submit();"><img src="images/user.png"><span> My RESERVATIONS</span></a>
 
                             <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: block;">
                                 {{ csrf_field() }}
                             </form>
+
+                            <a href="" data-toggle="modal" data-target=".signin_modal" class="hvr-sweep-to-right"><img src="images/user.png"><span>sign in</span></a>
                         </li>
 
                     </ul>
@@ -116,6 +117,103 @@ page it will render here dynamically... -->
         @yield('content')
 
         <!--    @yeilds ends here -->
+    </div>
+    <div class="modal fade signin_modal accounts_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="wedding_form modal-content">
+                <a href="#" class="modal_dismiss" data-dismiss="modal" aria-label="Close"><img src="images/close.png"></a>
+                <h3>Login to your account</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your e-mail...">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Your password...">
+                        <a href="#" class="forgot">Forgot?</a>
+                    </div>
+                    <button type="submit" class="hvr-sweep-to-right"><span>sign in!</span></button>
+                </form>
+                <div class="social_login text-center">
+                    <p>Or login via social networks.</p>
+                    <ul>
+                        <li><a href="#" class="facebook"><i class="fa fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                    <p>If you don`t have an account, you can <a href="#" data-toggle="modal" data-target=".signup_modal" data-dismiss="modal" aria-label="Close"><strong>create new</strong></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade signup_modal accounts_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="wedding_form modal-content">
+                <a href="#" class="modal_dismiss" data-dismiss="modal" aria-label="Close"><img src="images/close.png"></a>
+                <h3>Registration</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your first name...">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your last name...">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your e-mail...">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Create password...">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Confirm password...">
+                    </div>
+                    <button type="submit" class="hvr-sweep-to-right"><span>sign up!</span></button>
+
+                    <a href="#" data-toggle="modal" data-target=".password_recovery" data-dismiss="modal" aria-label="Close"><strong>click here</strong></a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade password_recovery accounts_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="wedding_form modal-content">
+                <a href="#" class="modal_dismiss" data-dismiss="modal" aria-label="Close"><img src="images/close.png"></a>
+                <h3>Password recovery</h3>
+                <p>Please, enter your e-mail below. We will send you instructions for reseting your password.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your e-mail...">
+                    </div>
+                    <button type="submit" class="hvr-sweep-to-right"><span>recover</span></button>
+                    <a href="#" data-toggle="modal" data-target=".success_msg" data-dismiss="modal" aria-label="Close"><strong>click here</strong></a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade success_msg accounts_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="wedding_form modal-content">
+                <a href="#" class="modal_dismiss" data-dismiss="modal" aria-label="Close"><img src="images/close.png"></a>
+                <h3>Success!</h3>
+                <p>A confirmation letter has been sent to your e-mail. Please, follow instuctions in letter to activate your accont.</p>
+                <a href="#" class="continue hvr-sweep-to-right"><span>continue</span></a>
+                <a href="#" data-toggle="modal" data-target=".confirmation" data-dismiss="modal" aria-label="Close"><strong>click here</strong></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade confirmation accounts_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="wedding_form modal-content">
+                <a href="#" class="modal_dismiss" data-dismiss="modal" aria-label="Close"><img src="images/close.png"></a>
+                <h3>Check your e-mail!</h3>
+                <p>E-mail with password recovery instructions has been sent to your e-mail. Please, check it and follow the instructions!</p>
+                <a href="#" class="continue hvr-sweep-to-right"><span>continue</span></a>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="clearfix container-fluid">

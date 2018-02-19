@@ -3155,16 +3155,21 @@ output {
 }
 
 .form-control::-moz-placeholder {
-    color: #999;
+    color: #dfdfdf;
+    opacity: 1
+}
+
+.form-control:-moz-placeholder {
+    color: #dfdfdf;
     opacity: 1
 }
 
 .form-control:-ms-input-placeholder {
-    color: #999
+    color: #dfdfdf;
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #999
+    color: #dfdfdf
 }
 
 .form-control::-ms-expand {
@@ -3222,7 +3227,8 @@ input[type=search] {
 }
 
 .form-group {
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    position: relative;
 }
 
 .checkbox,
@@ -22149,7 +22155,6 @@ button {
     border-radius: 0;
     border: 2px solid #e1e1e1;
     font-family: 'Proxima Nova';
-    font-size: 12px;
     height: 50px;
     padding: 0 10px;
     line-height: 50px;
@@ -24760,6 +24765,112 @@ footer h4 {
     margin-bottom: 0;
 }
 
+
+/* accounts popup styles */
+
+.modal_dismiss {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.accounts_modal {
+    z-index: 9999;
+}
+
+.accounts_modal .modal-dialog {
+    max-width: 480px;
+}
+
+.accounts_modal .wedding_form form {
+    padding: 50px 0 20px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.accounts_modal .modal-content {
+    padding: 40px 40px 20px;
+    border-radius: 0;
+    text-align: center;
+}
+
+.forgot {
+    font-weight: 500;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    border-bottom: 2px solid #d0d0d0;
+    background-color: #fff;
+    z-index: 5;
+    padding: 5px;
+}
+
+.accounts_modal .wedding_form .form-control {
+    font-size: 16px;
+}
+
+.accounts_modal .wedding_form button,
+.accounts_modal .wedding_form a.continue {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 20px !important;
+    width: 175px;
+    border: 2px solid #ba9e76;
+    text-transform: uppercase;
+    height: 50px;
+    line-height: 48px;
+    letter-spacing: 2px;
+    margin: 35px auto 10px;
+}
+
+.accounts_modal .social_login {
+    max-width: 310px;
+    margin: 0 auto;
+}
+
+.social_login ul {
+    text-align: center;
+    font-size: 0;
+    padding: 20px 0;
+}
+
+.social_login ul li {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% / 3);
+    padding: 0 5px;
+}
+
+.social_login ul li a {
+    display: block;
+    text-align: center;
+    color: #fff !important;
+    height: 35px;
+    line-height: 38px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.social_login ul li a.facebook {
+    background-color: #3a589a;
+}
+
+.social_login ul li a.twitter {
+    background-color: #4099ff;
+}
+
+.social_login ul li a.google {
+    background-color: #e9544f;
+}
+
+.accounts_modal.password_recovery .wedding_form form {
+    padding: 20px 0;
+}
+
+.accounts_modal .wedding_form > p {
+    margin: 40px 0 0;
+}
+
 @media all and (min-width:1200px) {
     .container,
     .container-fluid {
@@ -25784,6 +25895,15 @@ footer h4 {
     }
     .ratings_wrapper > div {
         width: 100%;
+    }
+    .accounts_modal .modal-content {
+        padding: 40px 20px 20px;
+    }
+    .accounts_modal .wedding_form form {
+        padding: 30px 0 20px;
+    }
+    .accounts_modal .wedding_form > p {
+        margin: 30px 0 0;
     }
 }
 
