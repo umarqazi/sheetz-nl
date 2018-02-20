@@ -204,6 +204,7 @@ page it will render here dynamically... -->
 
     <!-- Main.js is the file that contain all Merged & Minified Js -->
     <script src="/js/main.js"></script>
+    <!--    -->
     @yield('scripts')
     <!--  this @yeild scripts is to render scripts for different pages  -->
 
