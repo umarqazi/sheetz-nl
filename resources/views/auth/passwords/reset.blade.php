@@ -39,7 +39,7 @@
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                     @endif
-                                </div>
+                            a    </div>
                             </div>
 
                             <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
@@ -69,22 +69,42 @@
         </div>
     </div>
 -->
-<div class="modal fade resetpassword_modal accounts_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+<div class="resetpassword_modal accounts_modal">
     <div class="modal-dialog modal-lg" role="document">
         <div class="wedding_form modal-content">
             <a href="#" class="modal_dismiss" data-dismiss="modal" aria-label="Close"><img src="/images/close.png"></a>
             <h3>Reset your password</h3>
-            <form>
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Your e-mail...">
+            <form method="POST" action="{{ route('password.request') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="token" value="{{ $token }}">
+
+                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }} ">
+                    <input type="email" class="form-control" placeholder="Your e-mail..." name="email" value="{{ $email or old('email') }}" required autofocus>
+                    @if ($errors->has('email'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
+                    @endif
                 </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Create password...">
+
+                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                    <input type="password" class="form-control" placeholder="Create password..." name="password" required>
+                    @if ($errors->has('password'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('password') }}</strong>
+                        </span>
+                    @endif
                 </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Confirm password...">
+
+                <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
+                    <input type="password" class="form-control" placeholder="Confirm password..." name="password_confirmation">
+                    @if ($errors->has('password_confirmation'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('password_confirmation') }}</strong>
+                        </span>
+                    @endif
                 </div>
-                <button type="submit" class="hvr-sweep-to-right"><span>reset</span></button>
+                <button type="submit" class="hvr-sweep-to-right"><span>Reset Password</span></button>
             </form>
         </div>
     </div>

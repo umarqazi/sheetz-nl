@@ -16,10 +16,12 @@
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus> @if ($errors->has('email'))
-                                <span class="help-block">
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
-                                    </span> @endif
+                                    </span>
+                                @endif
                             </div>
                         </div>
 
@@ -58,7 +60,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div>name="fname" value="{{ old('fname') }}" required
     </div>
 </div>
 -->
@@ -66,13 +68,28 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="wedding_form modal-content">
             <h3>Login to your account</h3>
-            <form>
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Your e-mail...">
+            <form id="signInForm" method="POST" action="{{ route('login') }}">
+                {{ csrf_field() }}
+
+                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                    <input type="email" class="form-control" placeholder="Your e-mail..." name="email" value="{{ old('email') }}" required autofocus>
+
+                    @if ($errors->has('email'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
+                    @endif
                 </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Your password...">
+
+                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                    <input type="password" class="form-control" placeholder="Your password..." name="password" required>
                     <a href="/password/reset" class="forgot">Forgot?</a>
+
+                    @if ($errors->has('password'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('password') }}</strong>
+                        </span>
+                    @endif
                 </div>
                 <button type="submit" class="hvr-sweep-to-right"><span>sign in!</span></button>
             </form>
