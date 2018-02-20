@@ -1,6 +1,7 @@
-@extends('layouts.app2')
-
+@extends('layouts.app')
+<!---->
 @section('content')
+<!--
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -67,4 +68,25 @@
             </div>
         </div>
     </div>
+-->
+<div class="modal fade resetpassword_modal accounts_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="wedding_form modal-content">
+            <a href="#" class="modal_dismiss" data-dismiss="modal" aria-label="Close"><img src="/images/close.png"></a>
+            <h3>Reset your password</h3>
+            <form>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Your e-mail...">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Create password...">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Confirm password...">
+                </div>
+                <button type="submit" class="hvr-sweep-to-right"><span>reset</span></button>
+            </form>
+        </div>
+    </div>
+</div>
 @endsection
