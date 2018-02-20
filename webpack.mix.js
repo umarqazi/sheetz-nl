@@ -48,5 +48,6 @@ mix.scripts([
     'public/js/jquery.rateit.js',
     'public/js/slick.min.js',
     'public/js/wow.min.js',
+    'public/js/custom-file-input.js',
     'public/js/custom.js'
 ], 'public/js/main.js');

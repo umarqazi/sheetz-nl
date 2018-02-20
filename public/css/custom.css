@@ -22,7 +22,7 @@
 html,
 body {
     height: 100%;
-    font-family: 'poppinsregular';
+    font-family: 'Poppins', sans-serif;
     color: #424242;
 }
 
@@ -145,6 +145,7 @@ textarea .form-control {
     right: 0;
     min-width: 100px;
     padding: 0;
+    z-index: 99999;
 }
 
 .navbar-collapse {
@@ -293,6 +294,7 @@ header .main_nav {
 
 .lang_list .dropdown-menu > li > a {
     padding: 5px 10px;
+    text-transform: uppercase;
 }
 
 .main_nav {
@@ -2769,6 +2771,10 @@ footer h4 {
     margin: 0 auto;
 }
 
+.accounts_modal .wedding_form form div.form-group {
+    position: relative;
+}
+
 .accounts_modal .modal-content {
     padding: 40px 40px 20px;
     border-radius: 0;
@@ -2856,4 +2862,196 @@ footer h4 {
 
 .accounts_modal .wedding_form > p {
     margin: 40px 0 0;
+}
+
+/* my account pages styles */
+
+.account_wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 50px 15px;
+}
+
+.account_wrapper > h1 {
+    font-size: 48px;
+}
+
+.account_content {
+    padding: 60px 0 30px;
+}
+
+.account_tab_links .packages_tabs {
+    width: auto;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto 20pc;
+}
+
+.account_tab_links .packages_tabs .nav-tabs > li {
+    float: none;
+    background: no-repeat top left;
+    padding: 0 0 0 35px;
+}
+
+.account_tab_links .packages_tabs .nav-tabs > li.icon1 {
+    background-image: url(../images/icon13.png);
+}
+
+.account_tab_links .packages_tabs .nav-tabs > li.icon2 {
+    background-image: url(../images/icon14.png);
+}
+
+.account_tab_links .packages_tabs .nav-tabs > li.icon3 {
+    background-image: url(../images/icon15.png);
+}
+
+.account_tab_links .packages_tabs .nav-tabs > li.icon4 {
+    background-image: url(../images/icon16.png);
+}
+
+.account_tab_links .packages_tabs .nav-tabs > li.active.icon1 {
+    background-image: url(../images/icon13g.png);
+}
+
+.account_tab_links .packages_tabs .nav-tabs > li.active.icon2 {
+    background-image: url(../images/icon14g.png);
+}
+
+.account_tab_links .packages_tabs .nav-tabs > li.active.icon3 {
+    background-image: url(../images/icon15g.png);
+}
+
+.account_tab_links .packages_tabs .nav-tabs > li.active.icon4 {
+    background-image: url(../images/icon16g.png);
+}
+
+.account_tab_links .packages_tabs .nav-tabs > li.active > a,
+.account_tab_links .packages_tabs .nav-tabs > li.active > a:hover,
+.account_tab_links .packages_tabs .nav-tabs > li.active > a:focus {
+    border-color: transparent;
+    font-weight: 600;
+}
+
+.account_tab_links .packages_tabs .nav-tabs > li > a {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0px 0px 30px;
+}
+
+.account_tab_links .packages_tabs .nav-tabs > li > a:hover,
+.account_tab_links .packages_tabs .nav-tabs > li > a:focus,
+.account_tab_links .packages_tabs .nav-tabs > li > a:active {
+    border-color: transparent;
+    font-weight: 600;
+    color: #424242 !important;
+}
+
+.account_description h3 {
+    margin-bottom: 20px;
+}
+
+.account_form {
+    margin: 30px auto;
+    border-top: 1px solid #dfdfdf;
+    padding-top: 30px;
+}
+
+.uploaded_photo img,
+.uploaded_photo .box {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% / 2);
+}
+
+.uploaded_photo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.box p {
+    margin-top: 20px;
+    color: #bababa;
+}
+
+.box p span,
+.box p i {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    padding-right: 10px;
+    width: 30px;
+}
+
+.box p span {
+    font-size: 12px;
+    width: calc(100% - 50px);
+    padding: 0;
+    line-height: 20px;
+}
+
+
+/* input type file */
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-color: #d3394c;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: #722040;
 }
