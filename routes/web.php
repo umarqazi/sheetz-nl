@@ -79,6 +79,10 @@ Route::get('/my_reservations', function (){
    return view('user/my_reservations');
 });
 
+Route::get('/my_accounts', function (){
+   return view('user/my_accounts');
+});
+
 //Route::get('/layout', function (){
 //   return view('layouts/admin');
 //});
