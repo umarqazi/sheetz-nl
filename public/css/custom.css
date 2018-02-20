@@ -272,6 +272,7 @@ header .main_nav {
     position: absolute;
     right: 40px;
     top: 10px;
+    z-index: 99999;
 }
 
 .lang_list > ul > li {

@@ -5,12 +5,26 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="wedding_form modal-content">
             <h3>Password recovery</h3>
-            <p>Please, enter your e-mail below. We will send you instructions for reseting your password.</p>
-            <form>
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Your e-mail...">
+
+            @if (session('status'))
+                <div class="alert alert-success">
+                    {{ session('status') }}
                 </div>
-                <button type="button" data-toggle="modal" data-target=".password_recovery" class="hvr-sweep-to-right"><span>recover</span></button>
+            @endif
+
+            <p>Please, enter your e-mail below. We will send you instructions for reseting your password.</p>
+
+            <form method="POST" action="{{ route('password.email') }}">
+                {{ csrf_field() }}
+                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                    <input type="email" class="form-control" placeholder="Your e-mail..." name="email" value="{{ old('email') }}" required>
+                    @if ($errors->has('email'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
+                    @endif
+                </div>
+                <button type="button" data-toggle="modal" data-target=".password_recovery" class="hvr-sweep-to-right"><span>Reset</span></button>
             </form>
         </div>
     </div>
@@ -49,7 +63,8 @@
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required> @if ($errors->has('email'))
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
+                            @if ($errors->has('email'))
                                 <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span> @endif
