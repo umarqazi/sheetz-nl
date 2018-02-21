@@ -114,9 +114,9 @@
                                 {{ csrf_field() }}
                             </form>
 
-                            <a href="" data-toggle="modal" data-target=".signin_modal" class="hvr-sweep-to-right"><img src="/images/user.png"><span>sign in</span></a>
+                            <a href="/login" class="hvr-sweep-to-right"><img src="/images/user.png"><span>sign in</span></a>
 
-                            <a href="" class="hidden reservations_btn hvr-sweep-to-right"><img src="/images/user.png"><span>sign in</span></a>
+                            <a href="" class="hidden reservations_btn hvr-sweep-to-right"><img src="/images/user.png"><span>my reservations</span></a>
 
                         </li>
 
