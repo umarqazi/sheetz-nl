@@ -44,8 +44,8 @@
                             <label class="col-sm-3 col-xs-12">First & last name</label>
                             <div class="col-sm-9 col-xs-12">
                                 <div class="row">
-                                    <input type="text" class="form-control w50" placeholder="Your first name">
-                                    <input type="text" class="form-control w50" placeholder="Your last name">
+                                    <input type="text" class="form-control w50" placeholder="Your first name" value="{{Auth::guard('web')->user()->fname}}">
+                                    <input type="text" class="form-control w50" placeholder="Your last name" value="{{Auth::guard('web')->user()->lname}}">
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@
                             </div>
                             <label class="col-sm-2 col-xs-12">E-mail</label>
                             <div class="col-sm-4 col-xs-12">
-                                <input type="text" class="form-control" placeholder="Your conact e-mail...">
+                                <input type="text" class="form-control" placeholder="Your conact e-mail..." value="{{Auth::guard('web')->user()->email}}">
                             </div>
                         </div>
                         <hr>
