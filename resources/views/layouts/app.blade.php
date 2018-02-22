@@ -47,7 +47,8 @@
                         <div class="lang_list pull-right">
                             <ul>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/images/user.png"> <span></span></a>
+                                @if (Auth::guest())
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/images/user.png"></a>
                                     <ul class="dropdown-menu">
                                         <li>
                                             <a href="/login" class=""><span>sign in</span></a>
@@ -56,9 +57,27 @@
                                             <a href="/register" class=""><span>sign up</span></a>
                                         </li>
                                     </ul>
+                                @else
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/images/user.png"><span>{{ str_limit(strtoupper(Auth::guard('web')->user()->fname), 10)}}</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="/account" class=""><span>Profile</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();"><span>Log out</span></a>
+
+                                            <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: block;">
+                                                {{ csrf_field() }}
+                                            </form>
+                                        </li>
+                                    </ul>
+                                @endif
+
+
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/images/flag.png"> <span>English</span> <img src="/images/icon9.png"></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/images/flag.png"> <span>English</span><img src="/images/icon9.png"></a>
                                     <ul class="dropdown-menu">
                                         <li>
                                             <a href="#"><img src="/images/flag.png"> <span>US</span></a>
@@ -107,16 +126,12 @@
                     </div>
                     <ul class="nav navbar-nav navbar-right myreservations">
                         <li>
-                            <a href="{{ route('logout') }}" class="hidden hvr-sweep-to-right" onclick="event.preventDefault();
-                               document.getElementById('logout-form').submit();"><img src="/images/user.png"><span> My RESERVATIONS</span></a>
 
-                            <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: block;">
-                                {{ csrf_field() }}
-                            </form>
-
-                            <a href="/login" class="hvr-sweep-to-right"><img src="/images/user.png"><span>sign in</span></a>
-
-                            <a href="" class="hidden reservations_btn hvr-sweep-to-right"><img src="/images/user.png"><span>my reservations</span></a>
+                            @if (Auth::guest())
+                                <a href="/login" class="hvr-sweep-to-right"><img src="/images/user.png"><span>sign in</span></a>
+                            @else
+                                <a href="/account#orders" class="reservations_btn hvr-sweep-to-right"><img src="/images/user.png"><span> My RESERVATIONS</span></a>
+                            @endif
 
                         </li>
 
@@ -204,11 +219,44 @@ page it will render here dynamically... -->
 
     <!-- Main.js is the file that contain all Merged & Minified Js -->
     <script src="/js/main.js"></script>
+
     <!--    -->
     @yield('scripts')
+
+    {{--Success Message For Password Recovery Email Starts--}}
+        <script>
+            @if (session('status'))
+            $ (function () {
+                $('.password_recovery').modal('show');
+            });
+            @endif
+
+            $(document).ready(function () {
+                activeOrdersTab();
+
+                $('.reservations_btn').click(function () {
+                    location.reload();
+                });
+            });
+
+            function activeOrdersTab() {
+                // Javascript to enable link to tab
+                var url = document.location.toString();
+
+                if (url.match('#')) {
+                    $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
+                }
+
+                // Change hash for page-reload
+                $('.nav-tabs a').on('shown.bs.tab', function (e) {
+                    window.location.hash = e.target.hash;
+                });
+            }
+
+        </script>
+    {{--Success Message For Password Recovery Email Ends--}}
+
     <!--  this @yeild scripts is to render scripts for different pages  -->
-
-
 
 </body>
 

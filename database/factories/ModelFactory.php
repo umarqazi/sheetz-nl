@@ -18,7 +18,8 @@ $factory->define(App\User::class, function (Faker\Generator $faker) use ($carbon
     static $password;
 
     return [
-        'name' => $faker->name,
+        'fname' => $faker->firstName,
+        'lname' => $faker->lastName,
         'email' => preg_replace('/@example\..*/', '@sheetz.nl', $faker->unique()->safeEmail),
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),

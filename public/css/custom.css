@@ -282,6 +282,7 @@ header .main_nav {
 
 .lang_list > ul > li {
     display: inline-block;
+    margin: 0px 10px;
 }
 
 .lang_list > ul li a {
@@ -294,7 +295,7 @@ header .main_nav {
 
 .lang_list > ul li a span {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .lang_list .dropdown-menu > li > a {
@@ -3241,4 +3242,9 @@ footer h4 {
     /* 4px */
     margin-right: 0.25em;
     /* 4px */
+}
+
+.help-block{
+    font-size: 12px;
+    text-align: left;
 }

@@ -73,19 +73,19 @@ Route::get('/conference', function () {
     return view('user/conference');
 });
 
-// my reservations page shows account info and booking details etc...
+// Shows account info and booking details etc...
 
-Route::get('/my_reservations', function (){
-   return view('user/my_reservations');
+/*//////////////////////////////////////////////////////////*/
+/*///////////////ACCOUNT ROUTE AUTHENTICATION//////////////*/
+Route::group(['middleware'  => 'auth'], function(){
+    Route::get('/account', function (){
+        return view('user/my_accounts');
+    });
 });
 
-Route::get('/my_accounts', function (){
-   return view('user/my_accounts');
-});
 
-//Route::get('/layout', function (){
-//   return view('layouts/admin');
-//});
+//////////////////////////////////////////////////////////////////////////////////////
+/// ///////////////////////FRONTEND ROUTES END HERE//////////////////////////////////
 
 
 /*/////////////////////////////////////*/

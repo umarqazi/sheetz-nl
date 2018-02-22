@@ -44,7 +44,7 @@
               @foreach($users as $user)
                 <tr>
                   <td>{{$user->id}}</td>
-                  <td>{{ucwords($user->name)}}</td>
+                  <td>{{ucwords($user->fname.' '.$user->lname)}}</td>
                   <td>{{$user->created_at->format('d-m-Y')}}</td>
                   <td>{{$user->email}}</td>
                   <td>

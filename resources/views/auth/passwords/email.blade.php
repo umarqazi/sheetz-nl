@@ -6,15 +6,9 @@
         <div class="wedding_form modal-content">
             <h3>Password recovery</h3>
 
-            @if (session('status'))
-                <div class="alert alert-success">
-                    {{ session('status') }}
-                </div>
-            @endif
-
             <p>Please, enter your e-mail below. We will send you instructions for reseting your password.</p>
 
-            <form method="POST" action="{{ route('password.email') }}">
+            <form id="emailResetForm" method="POST" action="{{ route('password.email') }}">
                 {{ csrf_field() }}
                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                     <input type="email" class="form-control" placeholder="Your e-mail..." name="email" value="{{ old('email') }}" required>
@@ -24,12 +18,11 @@
                         </span>
                     @endif
                 </div>
-                <button type="button" data-toggle="modal" data-target=".password_recovery" class="hvr-sweep-to-right"><span>Reset</span></button>
+                <button id="emailResetButton" type="submit" class="hvr-sweep-to-right"><span>Reset</span></button>
             </form>
         </div>
     </div>
 </div>
-
 
 <div class="modal fade password_recovery accounts_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg" role="document">
@@ -42,46 +35,4 @@
     </div>
 </div>
 
-<!--
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Reset Password</div>
-
-                <div class="panel-body">
-                    @if (session('status'))
-                    <div class="alert alert-success">
-                        {{ session('status') }}
-                    </div>
-                    @endif
-
-                    <form class="form-horizontal" method="POST" action="{{ route('password.email') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
-                            @if ($errors->has('email'))
-                                <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span> @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                        Send Password Reset Link
-                                    </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
 @endsection
