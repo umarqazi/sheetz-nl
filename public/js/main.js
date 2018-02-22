@@ -4059,6 +4059,10 @@ $(document).ready(function () {
 
     });
 
+    $(".account_tab_links .packages_tabs").click(function () {
+        $(this).children("ul").toggleClass("toggle_up");
+    });
+
 }); // document ready ends here
 
 $(document).load(function () {

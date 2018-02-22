@@ -121,16 +121,19 @@ button {
 
 .form-control {
     border-radius: 0;
-    border: 2px solid #e1e1e1;
+    border: none;
+    border-bottom: 2px solid #424242;
     font-family: 'Proxima Nova';
-    font-size: 12px;
     height: 50px;
     padding: 0 10px;
     line-height: 50px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .form-control:focus {
-    border-color: #ba9e76;
+
+    border-bottom-color: #ba9e76;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -198,6 +201,7 @@ textarea .form-control {
     border-bottom: 3px solid #ba9e76;
     font-weight: 600;
     color: inherit !important;
+    background-color: transparent;
 }
 
 
@@ -2070,14 +2074,16 @@ footer h4 {
     padding: 50px 0 20px;
 }
 
-.wedding_form .form-control {
+/*
+.form-control {
     border-color: transparent;
     border-bottom-color: #424242;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+*/
 
-.wedding_form .form-control:focus {
+.form-control:focus {
     border-bottom-color: #ba9e76;
 }
 
@@ -2707,10 +2713,6 @@ footer h4 {
     cursor: pointer;
 }
 
-.toggle_up {
-    background-image: url(../images/toggle_up.png) !important;
-}
-
 .main_calender .filter_inner {
     width: 100%;
     padding: 20px 0;
@@ -2758,7 +2760,7 @@ footer h4 {
 
 .accounts_modal {
     z-index: 9999;
-    margin: 10rem auto;
+    margin: 50px auto;
 }
 
 .accounts_modal .modal-dialog {
@@ -2768,7 +2770,7 @@ footer h4 {
 }
 
 .accounts_modal .wedding_form form {
-    padding: 50px 0 20px;
+    padding: 40px 0 20px;
     max-width: 300px;
     margin: 0 auto;
 }
@@ -2781,6 +2783,10 @@ footer h4 {
     padding: 40px 40px 20px;
     border-radius: 0;
     text-align: center;
+}
+
+.accounts_modal .modal-content > img {
+    margin-top: 40px;
 }
 
 .forgot {
@@ -2879,14 +2885,19 @@ footer h4 {
 }
 
 .account_content {
-    padding: 60px 0 30px;
+    padding: 60px 0 10px;
 }
 
 .account_tab_links .packages_tabs {
     width: auto;
     padding: 0;
     text-align: left;
-    margin: 0 auto 20pc;
+    margin: 0 auto 20px;
+}
+
+.account_tab_links ul.toggle_up {
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
 }
 
 .account_tab_links .packages_tabs .nav-tabs > li {
@@ -2948,14 +2959,14 @@ footer h4 {
     color: #424242 !important;
 }
 
-.account_description h3 {
+.account_description h3,
+.account_description p {
     margin-bottom: 20px;
 }
 
 .account_form {
-    margin: 30px auto;
-    border-top: 1px solid #dfdfdf;
-    padding-top: 30px;
+    margin: 0 auto 30px;
+    padding-top: 20px;
 }
 
 .uploaded_photo img,
@@ -2992,6 +3003,203 @@ footer h4 {
     line-height: 20px;
 }
 
+.box label.view_all {
+    margin: 0 auto;
+}
+
+.account_form .w50 {
+    float: left;
+    width: 45%;
+    margin: 0 2.5%;
+}
+
+.account_form .hotel_filter {
+    padding: 0 0;
+    background-color: transparent;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.account_form .hotel_filter .filter_inner {
+    width: 100%;
+    padding: 0;
+}
+
+.account_form .hotel_filter .filter_inner li label {
+    display: block;
+    text-align: left;
+}
+
+.account_form .hotel_filter .filter_inner li:nth-child(2n + 1) {
+    background: none;
+}
+
+.account_form .hotel_filter .filter_inner li {
+    padding: 0 15px;
+}
+
+.account_form .hotel_filter .bootstrap-select > .dropdown-toggle {
+    padding-right: 0;
+}
+
+.cards_list {
+    margin-top: 30px;
+}
+
+.cards_list li a {
+    display: block;
+    margin: 20px auto;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cards_list li a span,
+.cards_list li a img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cards_list li a span {
+    padding: 0 20px;
+}
+
+.cards_list a.view_all {
+    margin: 30px auto 30px 0;
+}
+
+.account_form .form-group > label {
+    height: 50px;
+    line-height: 50px;
+}
+
+.account_form .social_login ul {
+    text-align: left;
+}
+
+.account_form .social_login ul li {
+    max-width: 130px;
+}
+
+.account_form .hotel_filter > span {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    font-size: 12px;
+    color: #bababa;
+    padding: 20px 15px 5px 0;
+}
+
+.account_form .hotel_filter > span i {
+    display: inline-block;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.orders_card {
+    margin-bottom: 20px;
+}
+
+.orders_card > div.clearfix {
+    position: relative;
+    padding: 20px 15px;
+    border: 2px solid #424242;
+}
+
+.close_order {
+    position: absolute;
+    right: 15px;
+    top: 15PX;
+}
+
+.orders_card h4,
+.orders_card h5 {
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.orders_card h4 > span {
+    display: block;
+    font-size: 14px;
+    color: #bababa;
+    padding-top: 10px;
+}
+
+.orders_card ul {
+    clear: both;
+    float: none;
+    margin: 20px 0 50px;
+}
+
+.orders_card ul li {
+    font-family: 'pt_serifregular';
+    padding-bottom: 10px;
+}
+
+.orders_card .rateit-font {
+    font-size: 16px;
+}
+
+.payment_info > p {
+    margin-bottom: 0;
+}
+
+.payment_info h1 {
+    color: #ba9e76;
+    font-family: 'pt_serifregular';
+    font-weight: 600;
+}
+
+.payment_info_content {
+    background: url(../images/visa.png) no-repeat left top;
+    padding-left: 80px;
+    word-wrap: break-word;
+}
+
+.payment_info_content h5 {
+    padding-bottom: 0;
+    font-weight: 600;
+}
+
+.payment_info_content p {
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.your_rewards {
+    margin-top: 20px;
+}
+
+.your_rewards h1 {
+    color: #ba9e76;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.your_rewards h1 span {
+    color: #424242;
+}
+
+.your_rewards ul {
+    margin: 30px auto 10px;
+}
+
+.your_rewards ul li {
+    padding-bottom: 5px;
+    font-family: 'pt_serifregular';
+}
+
+#order_history .orders_card ul {
+    margin: 0 0 10px;
+}
+
+#order_history .orders_card ul li:not(:first-child) {
+    display: inline-block;
+    width: 48%;
+}
 
 /* input type file */
 
@@ -3004,19 +3212,11 @@ footer h4 {
     z-index: -1;
 }
 
+
 .inputfile + label {
-    max-width: 80%;
-    font-size: 1.25rem;
-    /* 20px */
-    font-weight: 700;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    cursor: pointer;
     display: inline-block;
-    overflow: hidden;
-    padding: 0.625rem 1.25rem;
-    /* 10px 20px */
 }
+
 
 .no-js .inputfile + label {
     display: none;
@@ -3042,20 +3242,6 @@ footer h4 {
     /* 4px */
     margin-right: 0.25em;
     /* 4px */
-}
-
-
-/* style 1 */
-
-.inputfile-1 + label {
-    color: #f1e5e6;
-    background-color: #d3394c;
-}
-
-.inputfile-1:focus + label,
-.inputfile-1.has-focus + label,
-.inputfile-1 + label:hover {
-    background-color: #722040;
 }
 
 .help-block{

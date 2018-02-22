@@ -58,7 +58,7 @@
                                         </li>
                                     </ul>
                                 @else
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/images/user.png"><span>{{ str_limit(Auth::guard('web')->user()->fname, 10)}}</span></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/images/user.png"><span>{{ str_limit(strtoupper(Auth::guard('web')->user()->fname), 10)}}</span></a>
                                     <ul class="dropdown-menu">
                                         <li>
                                             <a href="" class=""><span>Profile</span></a>
@@ -126,11 +126,13 @@
                     </div>
                     <ul class="nav navbar-nav navbar-right myreservations">
                         <li>
+
                             @if (Auth::guest())
                                 <a href="/login" class="hvr-sweep-to-right"><img src="/images/user.png"><span>sign in</span></a>
                             @else
                                 <a href="#" class="reservations_btn hvr-sweep-to-right"><img src="/images/user.png"><span> My RESERVATIONS</span></a>
                             @endif
+
                         </li>
 
                     </ul>

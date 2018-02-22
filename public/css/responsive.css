@@ -13,8 +13,6 @@
     .wellness .vouchars_wrapper > div:last-of-type {
         float: right;
     }
-
-
 }
 
 @media all and (min-width:768px) {
@@ -509,9 +507,42 @@
         width: 49%;
         vertical-align: top;
     }
+    .account_wrapper {
+        padding: 30px 15px;
+    }
+    .account_wrapper > h1 {
+        font-size: 36px;
+    }
+    .account_content {
+        padding: 30px 0 10px;
+    }
+    .account_tab_links .packages_tabs .nav-tabs > li > a {
+        padding: 0px 0px 10px;
+    }
+    .account_form {
+        margin: 0 auto 10px;
+    }
+    .account_form .form-group > label {
+        line-height: 20px;
+    }
+    .orders_card h4,
+    .orders_card h5 {
+        padding-bottom: 10px;
+        float: none !important;
+        clear: both;
+    }
+    .orders_card .rateit-font {
+        float: none !important;
+        clear: both;
+        margin: 0 auto 10px;
+    }
 }
 
 @media all and (max-width:767px) {
+    .toggle_up {
+        background-image: url(../images/toggle_up.png) !important;
+    }
+
     .hotel_description h1,
     .main_hd,
     .packages > h1 {
@@ -1033,6 +1064,66 @@
     .accounts_modal .wedding_form > p {
         margin: 30px 0 0;
     }
+    .account_tab_links ul {
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1;
+        height: 40px;
+        overflow: hidden;
+        background: url(../images/toggle_down.png) no-repeat top 15px right 15px;
+        cursor: pointer;
+    }
+    .account_tab_links ul.toggle_up {
+        height: auto;
+    }
+    .account_tab_links .packages_tabs .nav-tabs > li {
+        background: no-repeat top 10px left;
+    }
+    .account_tab_links .packages_tabs .nav-tabs > li > a {
+        padding: 10px 0;
+    }
+    .account_form {
+        padding-top: 0;
+    }
+    .account_form .form-group > label {
+        line-height: normal;
+        height: auto;
+        margin-top: 20px;
+    }
+    .account_form .w50 {
+        float: none;
+        width: calc(100% - 30px);
+        margin: 0 auto 10px;
+    }
+    .account_form .hotel_filter .filter_inner {
+        margin: 0;
+    }
+    .account_form .hotel_filter .filter_inner li {
+        width: 48%;
+        float: none;
+        padding: 10px 0;
+        min-height: 35px;
+        line-height: 35px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .account_description h3 {
+        font-size: 20px;
+    }
+    .account_form .social_login ul {
+        padding: 0;
+    }
+    .orders_card ul {
+        margin: 10px 0 20px;
+    }
+    #order_history .orders_card .row > div:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .your_rewards ul {
+        margin: 20px auto 0px;
+    }
+    .account_wrapper > h1 {
+        font-size: 30px;
+    }
 }
 
 @media all and (max-width:480px) {
@@ -1166,6 +1257,17 @@
     .grand_hotel_info > div a {
         display: block;
         width: 100%;
+    }
+    .uploaded_photo img {
+        margin: 10px 0 20px;
+    }
+    .uploaded_photo .box {
+        width: 100%;
+    }
+    .account_form .hotel_filter > span {
+        display: block;
+        width: 100%;
+        padding: 5px 0 5px 0;
     }
 
 }
