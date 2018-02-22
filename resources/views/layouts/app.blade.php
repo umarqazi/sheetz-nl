@@ -61,7 +61,7 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/images/user.png"><span>{{ str_limit(strtoupper(Auth::guard('web')->user()->fname), 10)}}</span></a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a href="" class=""><span>Profile</span></a>
+                                            <a href="/account" class=""><span>Profile</span></a>
                                         </li>
                                         <li>
                                             <a href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -130,7 +130,7 @@
                             @if (Auth::guest())
                                 <a href="/login" class="hvr-sweep-to-right"><img src="/images/user.png"><span>sign in</span></a>
                             @else
-                                <a href="#" class="reservations_btn hvr-sweep-to-right"><img src="/images/user.png"><span> My RESERVATIONS</span></a>
+                                <a href="/account#orders" class="reservations_btn hvr-sweep-to-right"><img src="/images/user.png"><span> My RESERVATIONS</span></a>
                             @endif
 
                         </li>
@@ -230,6 +230,29 @@ page it will render here dynamically... -->
                 $('.password_recovery').modal('show');
             });
             @endif
+
+            $(document).ready(function () {
+                activeOrdersTab();
+
+                $('.reservations_btn').click(function () {
+                    location.reload();
+                });
+            });
+
+            function activeOrdersTab() {
+                // Javascript to enable link to tab
+                var url = document.location.toString();
+
+                if (url.match('#')) {
+                    $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
+                }
+
+                // Change hash for page-reload
+                $('.nav-tabs a').on('shown.bs.tab', function (e) {
+                    window.location.hash = e.target.hash;
+                });
+            }
+
         </script>
     {{--Success Message For Password Recovery Email Ends--}}
 
