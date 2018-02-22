@@ -394,8 +394,8 @@
                         <span>Customers</span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="/admin/customers/create"><i class="fa fa-circle-o"></i>Create New User</a></li>
-                        <li><a href="/admin/customers"><i class="fa fa-circle-o"></i>View Users</a></li>
+                        <li><a href="/admin/customers/create"><i class="fa fa-circle-o"></i>Create New Customer</a></li>
+                        <li><a href="/admin/customers"><i class="fa fa-circle-o"></i>View Customers</a></li>
                     </ul>
                 </li>
                 <li>

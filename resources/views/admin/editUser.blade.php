@@ -9,7 +9,7 @@
                 <!-- general form elements -->
                 <div class="box box-primary">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Update User</h3>
+                        <h3 class="box-title">Update Customer</h3>
                     </div>
                     <!-- /.box-header -->
                     <!-- form start -->
