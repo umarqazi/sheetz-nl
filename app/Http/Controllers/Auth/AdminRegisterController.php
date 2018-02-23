@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Admin;
+use App\Notifications\AdminRegisteredNotification;
 use Illuminate\Support\Facades\Auth;
 use Session;
 use Illuminate\Http\Request;
@@ -49,6 +50,9 @@ class AdminRegisterController extends Controller
             $admin->save();
 
             /*Auth::guard('admin')->login($admin);*/
+
+//            Email Notification upon Admin Registration.
+            $admin->notify(new AdminRegisteredNotification($admin));
 
             // redirect
             Session::flash('message', 'Admin Successfully Registered!');
